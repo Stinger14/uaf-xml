@@ -245,7 +245,7 @@ def gen_xml(workbook):
 
 sg.theme('TanBlue')  # No gray windows please!
 
-# STEP 1 define the layout
+# ? STEP 1 define the layout
 layout = [
     [sg.Text('Convertidor simple de formato Excel a XML')],
     [
@@ -261,10 +261,10 @@ layout = [
     [sg.Button('Convertir'), sg.Button('Salir')]
 ]
 
-# STEP 2 - create the window
+# ? STEP 2 - create the window
 window = sg.Window('Excel2XML', layout, grab_anywhere=True)
 
-# STEP3 - the event loop
+# ?vSTEP3 - the event loop
 while True:
     event, values = window.read()  # Read the event that happened and the values dictionary
     print(event, values)
@@ -272,10 +272,10 @@ while True:
         # then exit
         break
     elif event == 'Convertir':
-        # get_resources_path("data/transacciones_efectivo_2019_alt.xlsx")
+        # Grab selected Excel file
         wb = get_resources_path("data/" + values["-FILE LIST-"][0])
-        # arg = values["-FILE LIST-"][0]
         gen_xml(wb)
+        sg.Popup('Archivo XML generado.')
     elif event == "-FOLDER-":
         folder = values["-FOLDER-"]
         try:

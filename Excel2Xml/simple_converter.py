@@ -1,31 +1,22 @@
 import PySimpleGUI as sg
+import sys
 from openpyxl import load_workbook
 from resources import get_resources_path
 import os.path
 from yattag import Doc, indent
 import pandas as pd
+from datetime import datetime
 
-# Approach
-#
-# Import modules
-# Load Excel file
-# Create sheet object
-# (Check) Iterate through rows
-# Read data
-# Create XML format page
-# Append to file
-# Save file
-
-WORKBOOK = get_resources_path("data/transacciones_efectivo_2019_alt.xlsx")
-TEMPLATE = get_resources_path("data/_Web_Report_ReportID_3234-0-0.xml")
 RTEMAP = get_resources_path("data/mapped_elements.xlsx")
+
 k = []
 ele = []
 
 
-def get_row_headers():
+# TODO pass abs path to workbook file
+def get_row_headers(workbook):
     # Loading the Excel file
-    tmp_wb = load_workbook(WORKBOOK)
+    tmp_wb = load_workbook(workbook)
     # creating the sheet 1 object
     ws = tmp_wb.worksheets[0]
     # Iterating rows for getting the values of each row
@@ -34,6 +25,7 @@ def get_row_headers():
     return header
 
 
+# TODO pass abs path to rtemap file
 def get_rte_keys(keys):
     """
         Return key values from xml mapped elemnents of rte's excel file.
@@ -85,7 +77,7 @@ def gen_xml(workbook):
     ws = wb.worksheets[0]
     # Returning returns a triplet
     doc, tag, text = Doc().tagtext()
-    headers = get_row_headers()
+    headers = get_row_headers(workbook)
     get_xml_elements(ele)
     get_rte_keys(k)
     keymap = gen_keymap(k, ele)
@@ -239,64 +231,18 @@ def gen_xml(workbook):
         indent_text=False
     )
 
-    with open("output.xml", "w") as f:
+    date = ''.join(str(datetime.now()).replace('-', '_')[:10])
+
+    with open("_UAF_Web_Report_" + date + ".xml", "w") as f:
         f.write(result)
 
 
-sg.theme('TanBlue')  # No gray windows please!
+fname = sys.argv[1] if len(sys.argv) > 1 else sg.popup_get_file('Document to open')
 
-# ? STEP 1 define the layout
-layout = [
-    [sg.Text('Convertidor simple de formato Excel a XML')],
-    [
-        sg.Text("Archivo Excel:"),
-        sg.In(size=(28, 10), enable_events=True, key="-FOLDER-"),
-        sg.FolderBrowse(),
-    ],
-    [
-        sg.Listbox(
-            values=[], enable_events=True, size=(40, 10), key="-FILE LIST-"
-        )
-    ],
-    [sg.Button('Convertir'), sg.Button('Salir')]
-]
-
-# ? STEP 2 - create the window
-window = sg.Window('Excel2XML', layout, grab_anywhere=True)
-
-# ?vSTEP3 - the event loop
-while True:
-    event, values = window.read()  # Read the event that happened and the values dictionary
-    print(event, values)
-    if event == sg.WIN_CLOSED or event == 'Salir':  # If user closed window with X or if user clicked "Exit" button
-        # then exit
-        break
-    elif event == 'Convertir':
-        # Grab selected Excel file
-        wb = get_resources_path("data/" + values["-FILE LIST-"][0])
-        gen_xml(wb)
-        sg.Popup('Archivo XML generado.')
-    elif event == "-FOLDER-":
-        folder = values["-FOLDER-"]
-        try:
-            # Get list of files in folder
-            file_list = os.listdir(folder)
-        except:
-            file_list = []
-
-        fnames = [
-            f
-            for f in file_list
-            if os.path.isfile(os.path.join(folder, f))
-               and f.lower().endswith((".xlsx", ".xls"))
-        ]
-        window["-FILE LIST-"].update(fnames)
-    elif event == "-FILE LIST-":  # A file was chosen from the listbox
-        try:
-            filename = os.path.join(
-                values["-FOLDER-"], values["-FILE LIST-"][0]
-            )
-        except:
-            pass
-
-window.close()
+if not fname:
+    sg.popup("Cancel", "No se seleccionó ningún archivo")
+    raise SystemExit("Cancelando: no filename supplied")
+else:
+    # sg.popup('El archivo que seleccionó es: ', fname)
+    gen_xml(fname)
+    sg.popup('Archivo XML generado exitosamente', fname)

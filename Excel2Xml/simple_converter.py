@@ -6,6 +6,7 @@ import os.path
 from yattag import Doc, indent
 import pandas as pd
 from datetime import datetime
+import xml.etree.ElementTree as ET
 
 RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
@@ -83,29 +84,36 @@ def gen_xml(workbook):
     keymap = gen_keymap(k, ele)
 
     xml_header = '<?xml version="1.0" encoding="UTF-8"?>'
-    xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"></xs:schema>'
+    # xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"></xs:schema>'
 
-    with tag('report'):
+    doc.asis(xml_header)
+    # doc.asis(xml_schema)
+
+    with tag('report', ('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance"), \
+             ('xsi:noNamespaceSchemaLocation', "_UAF_Web_Report_.xsd")):
         for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=186, min_col=1, max_col=127)):
             row = [cell.value for cell in row if row is not None]
             with tag('rentity_id'):
-                doc.asis(row[1])
+                text(int('0590'))  # int
             with tag('rentity_branch'):
-                text(row[3])
+                text(row[3])  # str
             with tag('submission_code'):
-                if row[77] is None:
-                    row[77] = ""
+                if row[36] is None:
+                    row[36] = "E"
                 else:
-                    text(row[77])
+                    text(row[36])
             with tag('report_code'):
-                if row[78] is None:
-                    row[78] = ""
+                if row[42] is None:
+                    row[42] = 'CTR'
                 else:
-                    text(row[78])
+                    text(row[42])
             with tag('entity_reference'):
-                doc.asis("Bagricola")
+                text("Bagricola")
             with tag('fiu_ref_number'):
                 text("UAF Santo Domingo")
+            with tag('submission_date'):
+                tmp = datetime.strptime(str(row[4]), "%Y-%m-%d %H:%M:%S")
+                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
             with tag("currency_code_local"):
                 text("DOP")
             with tag("reporting_person"):
@@ -118,7 +126,8 @@ def gen_xml(workbook):
                 with tag("last_name"):
                     text("Abreu")
                 with tag("birthdate"):
-                    text("1972-10-03T00:00:00")
+                    tmp = datetime.strptime("1972-10-03 00:00:00", "%Y-%m-%d %H:%M:%S")
+                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
                 with tag("id_number"):
                     text("001-0955138-2")
                 with tag("nationality1"):
@@ -126,26 +135,26 @@ def gen_xml(workbook):
                 with tag("phones"):
                     with tag("phone"):
                         with tag("tph_contact_type"):
-                            if row[88] is None:
-                                row[88] = ""
-                            else:
-                                text(row[88])
-                        with tag("tph_communication_type"):
                             if row[89] is None:
-                                row[89] = ""
+                                row[89] = 1
                             else:
                                 text(row[89])
-                        with tag("tph_number"):
-                            text("535-8088")
+                        with tag("tph_communication_type"):
+                            if row[90] is None:
+                                row[90] = 1
+                            else:
+                                text(row[90])
                         with tag("tph_country_prefix"):
                             text("809")
+                        with tag("tph_number"):
+                            text("535-8088")
                         with tag("tph_extension"):
                             text("3212")
                 with tag("addresses"):
                     with tag("address"):
                         with tag("address_type"):
                             if row[94] is None:
-                                row[94] = ""
+                                row[94] = 1
                             else:
                                 text(row[94])
                         with tag("address"):
@@ -160,13 +169,15 @@ def gen_xml(workbook):
                             text("DO")
                 with tag("email"):
                     text("N.abreu@bagricola.gob.do")
+                with tag("occupation"):
+                    text("Ing. de Sistemas")
 
             with tag("location"):
                 with tag("address_type"):
-                    if row[93] is None:
-                        row[93] = ""
+                    if row[94] is None:
+                        row[94] = 1
                     else:
-                        text(row[93])
+                        text(row[94])
                 with tag("address"):
                     text("Calle Ave. George Washington No. 601")
                 with tag("city"):
@@ -176,11 +187,14 @@ def gen_xml(workbook):
 
             with tag("reason"):
                 if row[104] is None:
-                    row[104] = ""
+                    row[104] = "Transaccion sospechosa"
                 else:
-                    text(row[104])
-            # with tag("action"):
-            #     text(row[80])
+                    row[104]
+            with tag("action"):
+                if row[80] is None:
+                    row[80] = "Acciones a tomar"
+                else:
+                    text(row[80])
 
             with tag("transaction"):
                 with tag("transactionnumber"):
@@ -203,8 +217,14 @@ def gen_xml(workbook):
                         row[31] = ""
                     else:
                         text(row[31])
-                # with tag("date_transaction"):
-                #     text(row[37])
+                with tag("date_transaction"):
+                    if row[37] is None:
+                        row[37] = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
+                        text(str(row[37]))
+                    else:
+                        tmp = datetime.strptime(str(row[37]), "%Y-%m-%d %H:%M:%S")
+                        text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+
                 with tag("transmode_code"):
                     if row[36] is None:
                         row[36] = ""
@@ -217,13 +237,109 @@ def gen_xml(workbook):
                         text(row[105])
                 with tag("amount_local"):
                     if row[34] is None:
-                        row[34] = ""
+                        row[34] = 0.0
                     else:
                         text(row[34])
                 with tag("involved_parties"):
                     with tag("party"):
                         with tag("role"):
-                            pass
+                            text("B")
+                        with tag("person_my_client"):
+                            with tag("first_name"):
+                                text(row[10])
+                            with tag("middle_name"):
+                                text(row[10])
+                            with tag("last_name"):
+                                text(row[11])
+                            with tag("birthdate"):
+                                tmp = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                            with tag("ssn"):
+                                if row[15] is None:
+                                    row[15] = "n/a"
+                                else:
+                                    text(row[15])
+                            with tag("id_number"):
+                                if row[15] is None:
+                                    row[15] = "n/a"
+                                else:
+                                    text(row[15])
+
+                            with tag("phones"):
+                                with tag("phone"):
+                                    with tag("tph_contact_type"):
+                                        text(int("1"))
+                                    with tag("tph_communication_type"):
+                                        text("C")
+                                    with tag("tph_number"):
+                                        if row[26] is None:
+                                            row[26] = "n/a"
+                                        else:
+                                            text(row[26])
+
+                            with tag("addresses"):
+                                with tag("address"):
+                                    with tag("address_type"):
+                                        text(int("1"))
+                                    with tag("address"):
+                                        text(row[25])
+                                    with tag("city"):
+                                        if row[22] is None:
+                                            row[22] = ""
+                                        else:
+                                            text(row[22])
+                                    with tag("country_code"):
+                                        text("DO")
+
+                            with tag("email"):
+                                text("prueba@prueba.com")
+
+                            with tag("employer_address_id"):
+                                with tag("address_type"):
+                                    text(int("2"))
+                                with tag("address"):
+                                    text("Calle prueba no. 2")
+                                with tag("city"):
+                                    text(row[22])
+                                with tag("country_code"):
+                                    text("DO")
+
+                            with tag("employer_phone_id"):
+                                with tag("tph_contact_type"):
+                                    text(int("2"))
+                                with tag("tph_communication_type"):
+                                    text("M")
+                                with tag("tph_number"):
+                                    text("829-000-0000")
+
+                            with tag("identification"):
+                                with tag("type"):
+                                    text(int("1"))
+                                with tag("number"):
+                                    if row[55] is None:
+                                        row[55] = "n/a"
+                                    else:
+                                        text(row[55])
+                                with tag("issue_date"):
+                                    tmp = datetime.strptime("2020-03-03 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                                with tag("expiry_date"):
+                                    tmp = datetime.strptime("2020-03-03 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                                with tag("issue_country"):
+                                    text("DO")
+
+                        with tag("funds_code"):
+                            text(row[30])
+                        with tag("funds_comment"):
+                            text(row[31])
+                        with tag("country"):
+                            text("DO")
+                        with tag("significance"):
+                            text(int("6"))
+
+                with tag("comments"):
+                    text("Prueba")
 
     result = indent(
         doc.getvalue(),
@@ -232,12 +348,13 @@ def gen_xml(workbook):
     )
 
     date = ''.join(str(datetime.now()).replace('-', '_')[:10])
+    filename = "_UAF_Web_Report_" + date + ".xml"
 
-    with open("_UAF_Web_Report_" + date + ".xml", "w") as f:
+    with open(filename, "w") as f:
         f.write(result)
 
 
-fname = sys.argv[1] if len(sys.argv) > 1 else sg.popup_get_file('Document to open')
+fname = sys.argv[1] if len(sys.argv) > 1 else sg.popup_get_file('Seleccionar archivo')
 
 if not fname:
     sg.popup("Cancel", "No se seleccionó ningún archivo")

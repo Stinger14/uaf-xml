@@ -2,11 +2,10 @@ import PySimpleGUI as sg
 import sys
 from openpyxl import load_workbook
 from resources import get_resources_path
-import os.path
 from yattag import Doc, indent
 import pandas as pd
 from datetime import datetime
-import xml.etree.ElementTree as ET
+
 
 RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
@@ -89,24 +88,21 @@ def gen_xml(workbook):
     doc.asis(xml_header)
     # doc.asis(xml_schema)
 
-    with tag('report', ('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance"), \
-             ('xsi:noNamespaceSchemaLocation', "_UAF_Web_Report_.xsd")):
+    with tag('report', ('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance"),
+             ('xsi:noNamespaceSchemaLocation', "goAMLSchema.xsd")):
         for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=186, min_col=1, max_col=127)):
             row = [cell.value for cell in row if row is not None]
             with tag('rentity_id'):
-                text(int('0590'))  # int
+                text(int('1059'))  # int
             with tag('rentity_branch'):
                 text(row[3])  # str
             with tag('submission_code'):
-                if row[36] is None:
-                    row[36] = "E"
+                if row[36] == "EFECTIVO" or row[36] == "CHEQUE":
+                    text("M")
                 else:
-                    text(row[36])
+                    text("M")
             with tag('report_code'):
-                if row[42] is None:
-                    row[42] = 'CTR'
-                else:
-                    text(row[42])
+                text("CTR")
             with tag('entity_reference'):
                 text("Bagricola")
             with tag('fiu_ref_number'):
@@ -135,15 +131,9 @@ def gen_xml(workbook):
                 with tag("phones"):
                     with tag("phone"):
                         with tag("tph_contact_type"):
-                            if row[89] is None:
-                                row[89] = 1
-                            else:
-                                text(row[89])
+                            text(1)
                         with tag("tph_communication_type"):
-                            if row[90] is None:
-                                row[90] = 1
-                            else:
-                                text(row[90])
+                            text("L")
                         with tag("tph_country_prefix"):
                             text("809")
                         with tag("tph_number"):
@@ -186,10 +176,10 @@ def gen_xml(workbook):
                     text("DO")
 
             with tag("reason"):
-                if row[104] is None:
-                    row[104] = "Transaccion sospechosa"
+                if row[105] is None:
+                    row[105] = "Transaccion sospechosa"
                 else:
-                    row[104]
+                    text(row[105])
             with tag("action"):
                 if row[80] is None:
                     row[80] = "Acciones a tomar"
@@ -226,10 +216,8 @@ def gen_xml(workbook):
                         text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
 
                 with tag("transmode_code"):
-                    if row[36] is None:
-                        row[36] = ""
-                    else:
-                        text(row[36])
+                    text("A")
+
                 with tag("transmode_comment"):
                     if row[105] is None:
                         row[105] = ""
@@ -268,24 +256,28 @@ def gen_xml(workbook):
                             with tag("phones"):
                                 with tag("phone"):
                                     with tag("tph_contact_type"):
-                                        text(int("1"))
+                                        text(2)
                                     with tag("tph_communication_type"):
-                                        text("C")
+                                        text("L")
                                     with tag("tph_number"):
-                                        if row[26] is None:
-                                            row[26] = "n/a"
-                                        else:
-                                            text(row[26])
+                                        text("809-222-2222")
+                                        # if row[28] is None or row[28] == "":
+                                        #     row[28] = "8098881722"
+                                        # else:
+                                        #     text(row[28])
 
                             with tag("addresses"):
                                 with tag("address"):
                                     with tag("address_type"):
                                         text(int("1"))
                                     with tag("address"):
-                                        text(row[25])
+                                        if row[25] is None or row[25] == "":
+                                            row[25] = "prueba"
+                                        else:
+                                            text(row[25])
                                     with tag("city"):
                                         if row[22] is None:
-                                            row[22] = ""
+                                            row[22] = "prueba"
                                         else:
                                             text(row[22])
                                     with tag("country_code"):
@@ -306,7 +298,7 @@ def gen_xml(workbook):
 
                             with tag("employer_phone_id"):
                                 with tag("tph_contact_type"):
-                                    text(int("2"))
+                                    text(1)
                                 with tag("tph_communication_type"):
                                     text("M")
                                 with tag("tph_number"):
@@ -328,9 +320,8 @@ def gen_xml(workbook):
                                     text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
                                 with tag("issue_country"):
                                     text("DO")
-
                         with tag("funds_code"):
-                            text(row[30])
+                            text("K")
                         with tag("funds_comment"):
                             text(row[31])
                         with tag("country"):

@@ -1,0 +1,316 @@
+<report>
+    <rentity_id>1059</rentity_id>
+    <rentity_branch>01</rentity_branch>
+    <submission_code>E</submission_code>
+    <report_code>CTR</report_code>
+    <entity_reference>Bagricola</entity_reference>
+    <fiu_ref_number>090</fiu_ref_number>
+    <submission_date>2020-09-18T00:00:00</submission_date>
+    <currency_code_local>DOP</currency_code_local>
+    <reporting_person>
+        <gender>F</gender>
+        <title>Oficial de Cumplimiento</title>
+        <first_name>Naty</first_name>
+        <last_name>Abreu</last_name>
+        <birthdate>1972-10-03T00:00:00</birthdate>
+        <id_number>001-0955138-2</id_number>
+        <nationality1>DO</nationality1>
+        <phones>
+            <phone>
+                <tph_contact_type>2</tph_contact_type>
+                <tph_communication_type>L</tph_communication_type>
+                <tph_country_prefix>809</tph_country_prefix>
+                <tph_number>535-8088</tph_number>
+                <tph_extension>3122</tph_extension>
+            </phone>
+        </phones>
+        <addresses>
+            <address>
+                <address_type>2</address_type>
+                <address>Ave. George Washington NO. 601</address>
+                <town>Santo Domingo</town>
+                <city>Santo Domingo</city>
+                <zip>10103</zip>
+                <country_code>DO</country_code>
+            </address>
+        </addresses>
+        <email>N.abreu@bagricola.gob.do</email>
+        <occupation>Ing. de Sistemas</occupation>
+    </reporting_person>
+    <location>
+        <address_type>4</address_type>
+        <address>Av. George Washington No. 601</address>
+        <town>Santo Domingo</town>
+        <city>Santo Domingo</city>
+        <country_code>DO</country_code>
+    </location>
+    <reason>La transacciones sobrepasaron los US$ 15,000.00</reason>
+    <action>Se revisaron las evidencias</action>
+    <transaction>
+        <transactionnumber>TRNWEB0843 18 SEP 20</transactionnumber>
+        <transaction_location>Bani</transaction_location>
+        <transaction_description>El motivo de la transacción es ahorrar el dinero proveniente de la venta de un
+            vehículo.
+        </transaction_description>
+        <date_transaction>2020-09-18T00:00:00</date_transaction>
+        <teller>Juan Perez</teller>
+        <transmode_code>A</transmode_code>
+        <transmode_comment>Transacción Efectivo</transmode_comment>
+        <amount_local>1000000.00</amount_local>
+        <involved_parties>
+            <party>
+                <role>XAH</role>
+                <person_my_client>
+                    <gender>M</gender>
+                    <first_name>Kevin</first_name>
+                    <middle_name>Arturo</middle_name>
+                    <last_name>Soto Acosta</last_name>
+                    <birthdate>1994-09-20T00:00:00</birthdate>
+                    <birth_place>Santo Domingo</birth_place>
+                    <ssn>012-222256-8</ssn>
+                    <id_number>012-222256-8</id_number>
+                    <nationality1>DO</nationality1>
+                    <residence>DO</residence>
+                    <phones>
+                        <phone>
+                            <tph_contact_type>1</tph_contact_type>
+                            <tph_communication_type>M</tph_communication_type>
+                            <tph_number>8098098009</tph_number>
+                        </phone>
+                    </phones>
+                    <addresses>
+                        <address>
+                            <address_type>1</address_type>
+                            <address>Los Rios Villa Elena</address>
+                            <city>Bani</city>
+                            <country_code>DO</country_code>
+                        </address>
+                    </addresses>
+                    <email>kevinprueba@probando.com</email>
+                    <occupation>Mecanico</occupation>
+                    <employer_address_id>
+                        <address_type>2</address_type>
+                        <address>Calle Arroyo Hondo No.12</address>
+                        <city>Bani</city>
+                        <country_code>DO</country_code>
+                    </employer_address_id>
+                    <employer_phone_id>
+                        <tph_contact_type>2</tph_contact_type>
+                        <tph_communication_type>L</tph_communication_type>
+                        <tph_number>8095555030</tph_number>
+                    </employer_phone_id>
+                    <identification>
+                        <type>1</type>
+                        <number>012-222256-8</number>
+                        <expiry_date>2024-09-17T00:00:00</expiry_date>
+                        <issue_country>DO</issue_country>
+                    </identification>
+                    <source_of_wealth>Mecanico en un Taller Vehiculos</source_of_wealth>
+                </person_my_client>
+                <funds_code>K</funds_code>
+                <funds_comment>Reporte de prueba</funds_comment>
+                <country>DO</country>
+            </party>
+        </involved_parties>
+        <comments>Solo para prueba</comments>
+    </transaction>
+    <transaction>
+        <transactionnumber>TRNWEB0844 18 SEP 20</transactionnumber>
+        <transaction_location>Samana</transaction_location>
+        <transaction_description>Transaccion en efectivo sobre los US$15,000.00. Venta de aguacates
+        </transaction_description>
+        <date_transaction>2020-09-17T00:00:00</date_transaction>
+        <transmode_code>A</transmode_code>
+        <transmode_comment>En Efectivo</transmode_comment>
+        <amount_local>1200000.00</amount_local>
+        <involved_parties>
+            <party>
+                <role>XAH</role>
+                <person_my_client>
+                    <first_name>Luis</first_name>
+                    <middle_name>Oscar</middle_name>
+                    <last_name>Mejia</last_name>
+                    <birthdate>1993-09-09T00:00:00</birthdate>
+                    <birth_place>Samana</birth_place>
+                    <ssn>402-666666-7</ssn>
+                    <id_number>402-666666-7</id_number>
+                    <nationality1>DO</nationality1>
+                    <residence>DO</residence>
+                    <phones>
+                        <phone>
+                            <tph_contact_type>1</tph_contact_type>
+                            <tph_communication_type>M</tph_communication_type>
+                            <tph_number>8299999999</tph_number>
+                        </phone>
+                    </phones>
+                    <addresses>
+                        <address>
+                            <address_type>1</address_type>
+                            <address>Las caobas no. 41</address>
+                            <city>Samana</city>
+                            <country_code>DO</country_code>
+                        </address>
+                    </addresses>
+                    <email>pruebasegunda@probando.com</email>
+                    <occupation>Agricultor</occupation>
+                    <identification>
+                        <type>1</type>
+                        <number>402-666666-8</number>
+                        <issue_country>DO</issue_country>
+                    </identification>
+                    <source_of_wealth>De la agricultura siembra y venta</source_of_wealth>
+                </person_my_client>
+                <funds_code>K</funds_code>
+                <funds_comment>Se presento a realizar la transacción el titular de la cuenta</funds_comment>
+                <country>DO</country>
+            </party>
+        </involved_parties>
+    </transaction>
+    <transaction>
+        <transactionnumber>TRNWEB0849 18 SEP 20</transactionnumber>
+        <transaction_location>Santo Domingo</transaction_location>
+        <transaction_description>Sobrepaso los US$15,000.00. Dinero obtenido por premio de lotería
+        </transaction_description>
+        <date_transaction>2020-09-18T00:00:00</date_transaction>
+        <teller>Juan Martinez</teller>
+        <transmode_code>A</transmode_code>
+        <transmode_comment>Transacción en efectivo</transmode_comment>
+        <amount_local>920000.00</amount_local>
+        <involved_parties>
+            <party>
+                <role>XD</role>
+                <person>
+                    <gender>M</gender>
+                    <first_name>Pedro</first_name>
+                    <middle_name>Martin</middle_name>
+                    <last_name>Perez</last_name>
+                    <birthdate>1998-09-01T00:00:00</birthdate>
+                    <birth_place>Santo Domingo</birth_place>
+                    <mothers_name>Ana Juana Sosa Gomez</mothers_name>
+                    <ssn>014-2525245-9</ssn>
+                    <nationality2>DO</nationality2>
+                    <residence>DO</residence>
+                    <phones>
+                        <phone>
+                            <tph_contact_type>1</tph_contact_type>
+                            <tph_communication_type>M</tph_communication_type>
+                            <tph_number>8498298091</tph_number>
+                        </phone>
+                    </phones>
+                    <addresses>
+                        <address>
+                            <address_type>1</address_type>
+                            <address>Los Girasoles</address>
+                            <city>Santo Domingo</city>
+                            <country_code>DO</country_code>
+                        </address>
+                    </addresses>
+                    <email>probando@probando.com</email>
+                    <occupation>Mensajero</occupation>
+                    <identification>
+                        <type>1</type>
+                        <number>014-2525245-9</number>
+                        <issue_country>DO</issue_country>
+                    </identification>
+                    <source_of_wealth>Trabajo como mensajero 25,000 mensual</source_of_wealth>
+                </person>
+                <funds_code>A</funds_code>
+                <funds_comment>Depositar dinero a la cuenta de su madre para ahorrar</funds_comment>
+                <country>DO</country>
+            </party>
+            <party>
+                <role>B</role>
+                <person_my_client>
+                    <gender>F</gender>
+                    <first_name>Ana</first_name>
+                    <middle_name>Juana</middle_name>
+                    <last_name>Sosa</last_name>
+                    <birthdate>1961-12-08T00:00:00</birthdate>
+                    <birth_place>Santo Domingo</birth_place>
+                    <alias>Anita</alias>
+                    <ssn>41222828288</ssn>
+                    <id_number>4122828288</id_number>
+                    <nationality1>DO</nationality1>
+                    <residence>DO</residence>
+                    <phones>
+                        <phone>
+                            <tph_contact_type>1</tph_contact_type>
+                            <tph_communication_type>M</tph_communication_type>
+                            <tph_number>8521415656</tph_number>
+                        </phone>
+                    </phones>
+                    <addresses>
+                        <address>
+                            <address_type>1</address_type>
+                            <address>Los Girasoles</address>
+                            <city>Santo Domingo</city>
+                            <country_code>DO</country_code>
+                        </address>
+                    </addresses>
+                    <occupation>Cocinera</occupation>
+                    <identification>
+                        <type>1</type>
+                        <number>001-2525251-5</number>
+                        <expiry_date>2025-11-08T00:00:00</expiry_date>
+                        <issue_country>DO</issue_country>
+                    </identification>
+                    <source_of_wealth>Cocinando en Parador</source_of_wealth>
+                </person_my_client>
+                <funds_code>A</funds_code>
+                <funds_comment>Receptora del dinero</funds_comment>
+                <country>DO</country>
+            </party>
+        </involved_parties>
+    </transaction>
+    <transaction>
+        <transactionnumber>TRNWEB0850 18 SEP 20</transactionnumber>
+        <transaction_location>Higuey</transaction_location>
+        <transaction_description>Transacción en efectivo. Venta de terreno</transaction_description>
+        <date_transaction>2020-09-17T00:00:00</date_transaction>
+        <teller>Juan Perez</teller>
+        <transmode_code>A</transmode_code>
+        <transmode_comment>4545454</transmode_comment>
+        <amount_local>2000000.00</amount_local>
+        <involved_parties>
+            <party>
+                <role>XAH</role>
+                <person_my_client>
+                    <first_name>Julio</first_name>
+                    <middle_name>Cesar</middle_name>
+                    <last_name>Medina</last_name>
+                    <birthdate>1993-09-08T00:00:00</birthdate>
+                    <birth_place>Azua</birth_place>
+                    <ssn>402-55555-8</ssn>
+                    <id_number>402-55555-8</id_number>
+                    <nationality1>DO</nationality1>
+                    <residence>DO</residence>
+                    <phones>
+                        <phone>
+                            <tph_contact_type>1</tph_contact_type>
+                            <tph_communication_type>M</tph_communication_type>
+                            <tph_number>82945554554</tph_number>
+                        </phone>
+                    </phones>
+                    <addresses>
+                        <address>
+                            <address_type>1</address_type>
+                            <address>Las mariposas</address>
+                            <city>Higuey</city>
+                            <country_code>DO</country_code>
+                        </address>
+                    </addresses>
+                    <email>prueba@prueba.com</email>
+                    <occupation>Barbero</occupation>
+                    <identification>
+                        <type>1</type>
+                        <number>402-55555-8</number>
+                        <issue_country>DO</issue_country>
+                    </identification>
+                    <source_of_wealth>Peluqueria</source_of_wealth>
+                </person_my_client>
+                <funds_code>A</funds_code>
+                <country>DO</country>
+            </party>
+        </involved_parties>
+    </transaction>
+</report>

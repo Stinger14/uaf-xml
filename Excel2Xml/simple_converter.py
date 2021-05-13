@@ -6,7 +6,6 @@ from yattag import Doc, indent
 import pandas as pd
 from datetime import datetime
 
-
 RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
 k = []
@@ -90,12 +89,12 @@ def gen_xml(workbook):
 
     with tag('report', ('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance"),
              ('xsi:noNamespaceSchemaLocation', "goAMLSchema.xsd")):
-        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=186, min_col=1, max_col=127)):
+        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=8, min_col=1, max_col=127)):
             row = [cell.value for cell in row if row is not None]
             with tag('rentity_id'):
                 text(int('1059'))  # int
             with tag('rentity_branch'):
-                text(row[3])  # str
+                text("1")  # str
             with tag('submission_code'):
                 if row[36] == "EFECTIVO" or row[36] == "CHEQUE":
                     text("M")
@@ -185,6 +184,10 @@ def gen_xml(workbook):
                     row[80] = "Acciones a tomar"
                 else:
                     text(row[80])
+
+        # ? Append all transactions per report
+        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=186, min_col=1, max_col=127)):
+            row = [cell.value for cell in row if row is not None]
 
             with tag("transaction"):
                 with tag("transactionnumber"):

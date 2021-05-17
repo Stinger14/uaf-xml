@@ -127,169 +127,173 @@ def gen_xml(workbook):
                     text("DO")
 
             with tag("reason"):
-                if row[105] is None:
-                    row[105] = "Transaccion sospechosa"
+                if row[74] is None:
+                    row[74] = "Transaccion sospechosa"
                 else:
-                    text(row[105])
-            with tag("action"):
-                if row[80] is None:
-                    row[80] = "Acciones a tomar"
-                else:
-                    text(row[80])
+                    text(row[74])
+            # with tag("action"):
+            #     if row[80] is None:
+            #         row[80] = "Acciones a tomar"
+            #     else:
+            #         text(row[80])
 
         # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
         # ? y se añade un elemento transacción por file del RTE
         for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column)):
             row = [cell.value for cell in row if row is not None]
-
-            with tag("transaction"):
-                with tag("transactionnumber"):
-                    if row[97] is None:
-                        row[97] = ""
-                    else:
-                        text(row[97])
-                with tag("internal_ref_number"):
-                    if row[19] is None:
-                        row[19] = ""
-                    else:
-                        text(row[19])
-                with tag("transaction_location"):
-                    if row[3] is None:
-                        row[3] = ""
-                    else:
-                        text(row[3])
-                with tag("transaction_description"):
-                    if row[31] is None:
-                        row[31] = ""
-                    else:
-                        text(row[31])
-                with tag("date_transaction"):
-                    if row[37] is None:
-                        row[37] = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
-                        text(str(row[37]))
-                    else:
+            if row[0]:
+                with tag("transaction"):
+                    with tag("transactionnumber"):  # ! CHECK col in excel file
+                        if row[62] is None or row[62] == '':
+                            row[62] = "test1234"
+                        else:
+                            text(row[62])
+                    with tag("internal_ref_number"):
+                        if row[19] is None or row[19] == '':
+                            row[19] = "test1234"
+                        else:
+                            text(row[19])
+                    with tag("transaction_location"):
+                        if row[3] is None:
+                            row[3] = ""
+                        else:
+                            text(row[3])
+                    with tag("transaction_description"):
+                        if row[31] is None:
+                            row[31] = ""
+                        else:
+                            text(row[31])
+                    with tag("date_transaction"):
+                        if row[37] is None:
+                            row[37] = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
                         tmp = datetime.strptime(str(row[37]), "%Y-%m-%d %H:%M:%S")
                         text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
 
-                with tag("transmode_code"):
-                    text("A")
+                    with tag("transmode_code"):
+                        text("A")
 
-                with tag("transmode_comment"):
-                    if row[105] is None:
-                        row[105] = ""
-                    else:
-                        text(row[105])
-                with tag("amount_local"):
-                    if row[34] is None:
-                        row[34] = 0.0
-                    else:
-                        text(row[34])
-                with tag("involved_parties"):
-                    with tag("party"):
-                        with tag("role"):
-                            text("B")
-                        with tag("person_my_client"):
-                            with tag("first_name"):
-                                text(row[10])
-                            with tag("middle_name"):
-                                text(row[10])
-                            with tag("last_name"):
-                                if row[11] is None or row[11] == "":
-                                    row[11] = "n/a"
-                                else:
-                                    text(row[11])
-                            with tag("birthdate"):
-                                tmp = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
-                                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
-                            with tag("ssn"):
-                                if row[15] is None:
-                                    row[15] = "n/a"
-                                else:
-                                    text(row[15])
-                            with tag("id_number"):
-                                if row[15] is None:
-                                    row[15] = "n/a"
-                                else:
-                                    text(row[15])
+                    with tag("transmode_comment"):
+                        if row[43] is None:
+                            row[43] = ""
+                        else:
+                            text(row[43])
+                    with tag("amount_local"):
+                        if row[34] is None or row[34] == '':
+                            row[34] = 0.0
+                        else:
+                            text(row[34])
+                    with tag("involved_parties"):
+                        with tag("party"):
+                            with tag("role"):
+                                text("B")
+                            with tag("person_my_client"):
+                                with tag("first_name"):
+                                    if row[10] is None:
+                                        row[10] = "n/a"
+                                    else:
+                                        text(row[10])
+                                with tag("middle_name"):
+                                    if row[10] is None:
+                                        row[10] = "n/a"
+                                    else:
+                                        text(row[10])
+                                with tag("last_name"):
+                                    if row[11] is None or row[11] == "":
+                                        row[11] = ""
+                                    else:
+                                        text(row[11])
+                                with tag("birthdate"):
+                                    tmp = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                                with tag("ssn"):
+                                    if row[15] is None:
+                                        row[15] = "n/a"
+                                    else:
+                                        text(row[15])
+                                with tag("id_number"):
+                                    if row[15] is None:
+                                        row[15] = "n/a"
+                                    else:
+                                        text(row[15])
 
-                            with tag("phones"):
-                                with tag("phone"):
-                                    with tag("tph_contact_type"):
-                                        text(2)
-                                    with tag("tph_communication_type"):
-                                        text("L")
-                                    with tag("tph_number"):
-                                        text("809-222-2222")
-                                        # if row[28] is None or row[28] == "":
-                                        #     row[28] = "8098881722"
-                                        # else:
-                                        #     text(row[28])
+                                with tag("phones"):
+                                    with tag("phone"):
+                                        with tag("tph_contact_type"):
+                                            text(2)
+                                        with tag("tph_communication_type"):
+                                            text("L")
+                                        with tag("tph_number"):
+                                            text("809-222-2222")
+                                            # if row[28] is None or row[28] == "":
+                                            #     row[28] = "8098881722"
+                                            # else:
+                                            #     text(row[28])
 
-                            with tag("addresses"):
-                                with tag("address"):
-                                    with tag("address_type"):
-                                        text(int("1"))
+                                with tag("addresses"):
                                     with tag("address"):
-                                        if row[25] is None or row[25] == "":
-                                            row[25] = "prueba"
-                                        else:
-                                            text(row[25])
+                                        with tag("address_type"):
+                                            text(int("1"))
+                                        with tag("address"):
+                                            if row[25] is None or row[25] == "":
+                                                row[25] = "prueba"
+                                            else:
+                                                text(row[25])
+                                        with tag("city"):
+                                            if row[22] is None:
+                                                row[22] = "prueba"
+                                            else:
+                                                text(row[22])
+                                        with tag("country_code"):
+                                            text("DO")
+
+                                with tag("email"):
+                                    text("prueba@prueba.com")
+
+                                with tag("employer_address_id"):
+                                    with tag("address_type"):
+                                        text(int("2"))
+                                    with tag("address"):
+                                        text("Calle prueba no. 2")
                                     with tag("city"):
-                                        if row[22] is None:
-                                            row[22] = "prueba"
-                                        else:
-                                            text(row[22])
+                                        text(row[22])
                                     with tag("country_code"):
                                         text("DO")
 
-                            with tag("email"):
-                                text("prueba@prueba.com")
+                                with tag("employer_phone_id"):
+                                    with tag("tph_contact_type"):
+                                        text(1)
+                                    with tag("tph_communication_type"):
+                                        text("M")
+                                    with tag("tph_number"):
+                                        text("829-000-0000")
 
-                            with tag("employer_address_id"):
-                                with tag("address_type"):
-                                    text(int("2"))
-                                with tag("address"):
-                                    text("Calle prueba no. 2")
-                                with tag("city"):
-                                    text(row[22])
-                                with tag("country_code"):
-                                    text("DO")
+                                with tag("identification"):
+                                    with tag("type"):
+                                        text(int("1"))
+                                    with tag("number"):
+                                        if row[55] is None:
+                                            row[55] = "n/a"
+                                        else:
+                                            text(row[55])
+                                    with tag("issue_date"):
+                                        tmp = datetime.strptime("2020-03-03 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                        text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                                    with tag("expiry_date"):
+                                        tmp = datetime.strptime("2020-03-03 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                        text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                                    with tag("issue_country"):
+                                        text("DO")
+                            with tag("funds_code"):
+                                text("K")
+                            with tag("funds_comment"):
+                                text(row[31])
+                            with tag("country"):
+                                text("DO")
+                            with tag("significance"):
+                                text(int("6"))
 
-                            with tag("employer_phone_id"):
-                                with tag("tph_contact_type"):
-                                    text(1)
-                                with tag("tph_communication_type"):
-                                    text("M")
-                                with tag("tph_number"):
-                                    text("829-000-0000")
-
-                            with tag("identification"):
-                                with tag("type"):
-                                    text(int("1"))
-                                with tag("number"):
-                                    if row[55] is None:
-                                        row[55] = "n/a"
-                                    else:
-                                        text(row[55])
-                                with tag("issue_date"):
-                                    tmp = datetime.strptime("2020-03-03 00:00:00", "%Y-%m-%d %H:%M:%S")
-                                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
-                                with tag("expiry_date"):
-                                    tmp = datetime.strptime("2020-03-03 00:00:00", "%Y-%m-%d %H:%M:%S")
-                                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
-                                with tag("issue_country"):
-                                    text("DO")
-                        with tag("funds_code"):
-                            text("K")
-                        with tag("funds_comment"):
-                            text(row[31])
-                        with tag("country"):
-                            text("DO")
-                        with tag("significance"):
-                            text(int("6"))
-
-                with tag("comments"):
-                    text("Prueba")
+                    with tag("comments"):
+                        text("Prueba")
 
     # ? doc.getvalue() contiene el archivo XML en formato string
     result = indent(

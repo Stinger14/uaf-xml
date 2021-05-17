@@ -1,54 +1,96 @@
-"""
-Traductor de Excel a XML
-========================
-
-Este programa traduce un archivo Excel generado por el módulo RTE a XML
-requerido por la Unidad de Análisis Financiera(UAF).
-"""
-
 import PySimpleGUI as sg
 import sys
 from openpyxl import load_workbook
 from resources import get_resources_path
 from yattag import Doc, indent
+import pandas as pd
 from datetime import datetime
 
-# RTEMAP = get_resources_path("data/mapped_elements.xlsx")
+RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
 k = []
 ele = []
 
 
+# TODO pass abs path to workbook file
+def get_row_headers(workbook):
+    # Loading the Excel file
+    tmp_wb = load_workbook(workbook)
+    # creating the sheet 1 object
+    ws = tmp_wb.worksheets[0]
+    # Iterating rows for getting the values of each row
+    for row in ws.iter_rows(min_row=7, max_row=7, min_col=1, max_col=127):
+        header = [cell.value for cell in row]
+    return header
+
+
+# TODO pass abs path to rtemap file
+def get_rte_keys(keys):
+    """
+        Return key values from xml mapped elemnents of rte's excel file.
+    """
+    try:
+        df = pd.read_excel(RTEMAP)
+        rte_map = df[df['RTE Banke'].notna()]
+        for i, j in rte_map.iterrows():
+            keys.append(j.values[1])
+    except FileNotFoundError as e:
+        print(f'The file {e} does not exist.')
+
+
+def get_xml_elements(elements):
+    """
+        Return key values from xml mapped elemnents of rte's excel file.
+    """
+    try:
+        df = pd.read_excel(RTEMAP)
+        elements_map = df[df['Elementos UAF'].notna()]
+        for i, j in elements_map.iterrows():
+            elements.append(j.values[0])
+    except FileNotFoundError as e:
+        print(f'The file {e} does not exist.')
+
+
+def gen_keymap(elements, keys):
+    """Translate excel columns into XML elements names"""
+    try:
+        df = pd.DataFrame([elements, keys])
+        keymap = dict.fromkeys(elements, '')
+        for i in range(len(df.columns)):
+            for k in elements:
+                if keymap[k] == '' and k == df.iloc[0][i]:
+                    if df.iloc[1][i] in keys and df.iloc[1][i] != 'parent node':
+                        keymap[k] = df.iloc[1][i]
+                        break
+                    elif df.iloc[1][i] == 'parent node':
+                        break
+        return keymap
+    except KeyError as e:
+        print(e)
+
+
 def gen_xml(workbook):
-    """
-    :param name: workbook - Archivo Excel a convertir.
-    :param type: str
-    :return: void
-    """
     # Load our Excel File
     wb = load_workbook(workbook)
     # Getting an object of active sheet 1
     ws = wb.worksheets[0]
     # Returning returns a triplet
     doc, tag, text = Doc().tagtext()
+    # headers = get_row_headers(workbook)
+    # get_xml_elements(ele)
+    # get_rte_keys(k)
+    # keymap = gen_keymap(k, ele)
 
     xml_header = '<?xml version="1.0" encoding="UTF-8"?>'
     # xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"></xs:schema>'
 
-    # ? Se agrega el header al documento.
     doc.asis(xml_header)
+    # doc.asis(xml_schema)
 
-    # ? Se crean los elementos o nodos.
-    # ? El nodo report(root) se debe generar con los atributos especificados para
-    # ? que el reporte sigan las reglas definidas en el esquema de la UAF.
     with tag('report', ('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance"),
              ('xsi:noNamespaceSchemaLocation', "goAMLSchema.xsd")):
-        # ? Se recorre solo la primera fila para crear el esqueleto
-        # ? Algunos datos están hardcode ya que el RTE no genera esta data o
-        # ? estos datos serán siempre fijos.
-        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=8, min_col=1, max_col=ws.max_column)):
+        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=8, min_col=1, max_col=127)):
             row = [cell.value for cell in row if row is not None]
-            # ? La indentación define la relación padre-hijo entre los nodos.
             with tag('rentity_id'):
                 text(int('1059'))  # int
             with tag('rentity_branch'):
@@ -137,9 +179,8 @@ def gen_xml(workbook):
                 else:
                     text(row[80])
 
-        # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
-        # ? y se añade un elemento transacción por file del RTE
-        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column)):
+        # ? Append all transactions per report
+        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=186, min_col=1, max_col=127)):
             row = [cell.value for cell in row if row is not None]
 
             with tag("transaction"):
@@ -291,14 +332,12 @@ def gen_xml(workbook):
                 with tag("comments"):
                     text("Prueba")
 
-    # ? doc.getvalue() contiene el archivo XML en formato string
     result = indent(
         doc.getvalue(),
         indentation='   ',
         indent_text=False
     )
 
-    # ? Se agrega la fecha del día en que se genera el XML
     date = ''.join(str(datetime.now()).replace('-', '_')[:10])
     filename = "_UAF_Web_Report_" + date + ".xml"
 
@@ -306,12 +345,12 @@ def gen_xml(workbook):
         f.write(result)
 
 
-# ? Esta variable guarda el archivo seleccionado.
 fname = sys.argv[1] if len(sys.argv) > 1 else sg.popup_get_file('Seleccionar archivo')
 
 if not fname:
     sg.popup("Cancel", "No se seleccionó ningún archivo")
     raise SystemExit("Cancelando: no filename supplied")
 else:
+    # sg.popup('El archivo que seleccionó es: ', fname)
     gen_xml(fname)
     sg.popup('Archivo XML generado exitosamente', fname)

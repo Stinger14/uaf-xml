@@ -145,11 +145,7 @@ def gen_xml(workbook):
             if row[0]:
                 with tag("transaction"):
                     with tag("transactionnumber"):  # ! CHECK col in excel file
-                        if row[62] is None or row[62] == '':
-                            row[62] = "test1234"
-                            text(row[62])
-                        else:
-                            text(row[62])
+                        text(row[77])
                     with tag("internal_ref_number"):
                         if row[19] is None or row[19] == '':
                             row[19] = "test1234"
@@ -157,12 +153,14 @@ def gen_xml(workbook):
                             text(row[19])
                     with tag("transaction_location"):
                         if row[3] is None:
-                            row[3] = ""
+                            row[3] = "n/a"
+                            text(row[3])
                         else:
                             text(row[3])
                     with tag("transaction_description"):
                         if row[31] is None:
                             row[31] = ""
+                            text(row[31])
                         else:
                             text(row[31])
                     with tag("date_transaction"):
@@ -177,11 +175,13 @@ def gen_xml(workbook):
                     with tag("transmode_comment"):
                         if row[43] is None:
                             row[43] = ""
+                            text(row[43])
                         else:
                             text(row[43])
                     with tag("amount_local"):
                         if row[34] is None or row[34] == '':
                             row[34] = 0.0
+                            text(row[34])
                         else:
                             text(row[34])
                     with tag("involved_parties"):
@@ -192,16 +192,18 @@ def gen_xml(workbook):
                                 with tag("first_name"):
                                     if row[10] is None:
                                         row[10] = "n/a"
+                                        text(row[10])
                                     else:
                                         text(row[10])
                                 with tag("middle_name"):
                                     if row[10] is None:
                                         row[10] = "n/a"
+                                        text(row[10])
                                     else:
                                         text(row[10])
                                 with tag("last_name"):
                                     if row[11] is None or row[11] == "":
-                                        row[11] = "n/a"
+                                        row[11] = "."
                                         text(row[11])
                                     else:
                                         text(row[11])
@@ -235,11 +237,13 @@ def gen_xml(workbook):
                                         with tag("address"):
                                             if row[25] is None or row[25] == "":
                                                 row[25] = "prueba"
+                                                text(row[25])
                                             else:
                                                 text(row[25])
                                         with tag("city"):
                                             if row[22] is None:
                                                 row[22] = "prueba"
+                                                text(row[22])
                                             else:
                                                 text(row[22])
                                         with tag("country_code"):
@@ -271,6 +275,7 @@ def gen_xml(workbook):
                                     with tag("number"):
                                         if row[55] is None:
                                             row[55] = "n/a"
+                                            text(row[55])
                                         else:
                                             text(row[55])
                                     with tag("issue_date"):

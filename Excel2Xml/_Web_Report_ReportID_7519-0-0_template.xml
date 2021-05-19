@@ -49,13 +49,13 @@
     <transaction>
         <transactionnumber>TRNWEB0843 18 SEP 20</transactionnumber>
         <transaction_location>Bani</transaction_location>
-        <transaction_description>El motivo de la transacción es ahorrar el dinero proveniente de la venta de un
-            vehículo.
+        <transaction_description>El motivo de la transacci&#243;n es ahorrar el dinero proveniente de la venta de un
+            veh&#237;culo.
         </transaction_description>
         <date_transaction>2020-09-18T00:00:00</date_transaction>
         <teller>Juan Perez</teller>
         <transmode_code>A</transmode_code>
-        <transmode_comment>Transacción Efectivo</transmode_comment>
+        <transmode_comment>Transacci&#243;n Efectivo</transmode_comment>
         <amount_local>1000000.00</amount_local>
         <involved_parties>
             <party>
@@ -161,7 +161,7 @@
                     <source_of_wealth>De la agricultura siembra y venta</source_of_wealth>
                 </person_my_client>
                 <funds_code>K</funds_code>
-                <funds_comment>Se presento a realizar la transacción el titular de la cuenta</funds_comment>
+                <funds_comment>Se presento a realizar la transacci&#243;n el titular de la cuenta</funds_comment>
                 <country>DO</country>
             </party>
         </involved_parties>
@@ -169,12 +169,12 @@
     <transaction>
         <transactionnumber>TRNWEB0849 18 SEP 20</transactionnumber>
         <transaction_location>Santo Domingo</transaction_location>
-        <transaction_description>Sobrepaso los US$15,000.00. Dinero obtenido por premio de lotería
+        <transaction_description>Sobrepaso los US$15,000.00. Dinero obtenido por premio de loter&#237;a
         </transaction_description>
         <date_transaction>2020-09-18T00:00:00</date_transaction>
         <teller>Juan Martinez</teller>
         <transmode_code>A</transmode_code>
-        <transmode_comment>Transacción en efectivo</transmode_comment>
+        <transmode_comment>Transacci&#243;n en efectivo</transmode_comment>
         <amount_local>920000.00</amount_local>
         <involved_parties>
             <party>
@@ -265,7 +265,7 @@
     <transaction>
         <transactionnumber>TRNWEB0850 18 SEP 20</transactionnumber>
         <transaction_location>Higuey</transaction_location>
-        <transaction_description>Transacción en efectivo. Venta de terreno</transaction_description>
+        <transaction_description>Transacci&#243;n en efectivo. Venta de terreno</transaction_description>
         <date_transaction>2020-09-17T00:00:00</date_transaction>
         <teller>Juan Perez</teller>
         <transmode_code>A</transmode_code>

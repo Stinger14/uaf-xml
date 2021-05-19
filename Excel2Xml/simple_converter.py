@@ -12,6 +12,7 @@ from openpyxl import load_workbook
 from resources import get_resources_path
 from yattag import Doc, indent
 from datetime import datetime
+from xml.etree.ElementTree import parse, ParseError
 
 # RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
@@ -21,8 +22,7 @@ ele = []
 
 def gen_xml(workbook):
     """
-    :param name: workbook - Archivo Excel a convertir.
-    :param type: str
+    :param workbook: str - Archivo Excel a convertir.
     :return: void
     """
     # Load our Excel File
@@ -32,7 +32,7 @@ def gen_xml(workbook):
     # Returning returns a triplet
     doc, tag, text = Doc().tagtext()
 
-    xml_header = '<?xml version="1.0" encoding="UTF-8"?>'
+    xml_header = '<?xml version="1.0" encoding="iso-8859-1"?>'
     # xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"></xs:schema>'
 
     # ? Se agrega el header al documento.
@@ -40,7 +40,7 @@ def gen_xml(workbook):
 
     # ? Se crean los elementos o nodos.
     # ? El nodo report(root) se debe generar con los atributos especificados para
-    # ? que el reporte sigan las reglas definidas en el esquema de la UAF.
+    # ? que el reporte siga las reglas definidas en el esquema de la UAF.
     with tag('report', ('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance"),
              ('xsi:noNamespaceSchemaLocation', "goAMLSchema.xsd")):
         # ? Se recorre solo la primera fila para crear el esqueleto
@@ -138,14 +138,16 @@ def gen_xml(workbook):
             #         text(row[80])
 
         # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
-        # ? y se añade un elemento transacción por file del RTE
+        # ? y se añade un nodo transacción por fila del RTE
         for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column)):
             row = [cell.value for cell in row if row is not None]
+            # ? Si tiene número de reporte entonces la fila es válida
             if row[0]:
                 with tag("transaction"):
                     with tag("transactionnumber"):  # ! CHECK col in excel file
                         if row[62] is None or row[62] == '':
                             row[62] = "test1234"
+                            text(row[62])
                         else:
                             text(row[62])
                     with tag("internal_ref_number"):
@@ -199,7 +201,8 @@ def gen_xml(workbook):
                                         text(row[10])
                                 with tag("last_name"):
                                     if row[11] is None or row[11] == "":
-                                        row[11] = ""
+                                        row[11] = "n/a"
+                                        text(row[11])
                                     else:
                                         text(row[11])
                                 with tag("birthdate"):
@@ -224,10 +227,6 @@ def gen_xml(workbook):
                                             text("L")
                                         with tag("tph_number"):
                                             text("809-222-2222")
-                                            # if row[28] is None or row[28] == "":
-                                            #     row[28] = "8098881722"
-                                            # else:
-                                            #     text(row[28])
 
                                 with tag("addresses"):
                                     with tag("address"):
@@ -245,7 +244,6 @@ def gen_xml(workbook):
                                                 text(row[22])
                                         with tag("country_code"):
                                             text("DO")
-
                                 with tag("email"):
                                     text("prueba@prueba.com")
 
@@ -306,8 +304,18 @@ def gen_xml(workbook):
     date = ''.join(str(datetime.now()).replace('-', '_')[:10])
     filename = "_UAF_Web_Report_" + date + ".xml"
 
+    # ? Guardar contenido en un archivo.
     with open(filename, "w") as f:
         f.write(result)
+
+    # ? Once generated, edit file to remove root node attribs.
+    try:
+        tree = parse(filename)
+        if tree:
+            tree.getroot().attrib.popitem()
+            tree.write(filename)
+    except ParseError as e:
+        print('>>Exception<<: File not well-formed')
 
 
 # ? Esta variable guarda el archivo seleccionado.

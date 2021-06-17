@@ -32,7 +32,7 @@ def gen_xml(workbook):
     # Returning returns a triplet
     doc, tag, text = Doc().tagtext()
 
-    xml_header = '<?xml version="1.0" encoding="iso-8859-1"?>'
+    xml_header = '<?xml version="1.0" encoding="iso-8859-3"?>'
     # xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"></xs:schema>'
 
     # ? Se agrega el header al documento.
@@ -236,19 +236,29 @@ def gen_xml(workbook):
                                         text(1)
                                     with tag("tph_communication_type"):
                                         if row[28] is None or row[28] == '':
-                                            text("M")
-                                        else:
                                             text("L")
+                                        else:
+                                            text("M")
                                     with tag("tph_country_prefix"):
-                                        if row[27]:
+                                        if row[27] is None and row[28] is None and row[26] is None:
+                                            text("n/a")
+                                        elif row[27] == '' and row[28] == '' and row[26] == '':
+                                            print('matched')
+                                        elif row[27]:
                                             text(row[27][:3])
                                         elif row[28]:
                                             text(row[28][:3])
                                         elif row[26]:
                                             text(row[26][:3])
+                                        else:
+                                            pass
                                     with tag("tph_number"):
-                                        if row[27]:
-                                            text(row[27][4:12])     #! BUG
+                                        if row[27] is None and row[28] is None and row[26] is None:
+                                            text("n/a")
+                                        elif row[27] == '' and row[28] == '' and row[26] == '':
+                                            print('matched')
+                                        elif row[27]:
+                                            text(row[27][4:12])
                                         elif row[26]:
                                             text(row[26][4:12])
                                         elif row[28]:
@@ -349,19 +359,27 @@ def gen_xml(workbook):
                                             with tag("tph_contact_type"):
                                                 text(1)
                                             with tag("tph_communication_type"):
-                                                if row[27] is None or row[27] == '':
-                                                    text("M")
-                                                else:
+                                                if row[28] is None or row[28] == '':
                                                     text("L")
+                                                else:
+                                                    text("M")
                                             with tag("tph_country_prefix"):
-                                                if row[27]:
+                                                if row[27] is None and row[28] is None and row[26] is None:
+                                                    text("n/a")
+                                                elif row[27] == '' and row[28] == '' and row[26] == '':
+                                                    text("n/a")
+                                                elif row[27]:
                                                     text(row[27][:3])
                                                 elif row[28]:
                                                     text(row[28][:3])
                                                 elif row[26]:
                                                     text(row[26][:3])
                                             with tag("tph_number"):
-                                                if row[27]:
+                                                if row[27] is None and row[28] is None and row[26] is None:
+                                                    text("n/a")
+                                                elif row[27] == '' and row[28] == '' and row[26] == '':
+                                                    text("n/a")
+                                                elif row[27]:
                                                     text(row[27][4:12])
                                                 elif row[26]:
                                                     text(row[26][4:12])
@@ -407,16 +425,15 @@ def gen_xml(workbook):
                                     text("A")
                             with tag("opened"):         # FIXME: Fecha apertura cta
                                 if row[37] is None or row[37] == '':
-                                    if row[37] is None:
-                                        row[37] = datetime.strptime("2000-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
-                                    tmp = datetime.strptime(str(row[37]), "%Y-%m-%d %H:%M:%S")
-                                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                                    row[37] = datetime.strptime("2000-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                tmp = datetime.strptime(str(row[37]), "%Y-%m-%d %H:%M:%S")
+                                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
                             with tag("balance"):        # FIXME: Balance luego de realizar trx
                                 text("1000000")
                             with tag("status_code"):    # FIXME: Fetch estado cta al inicio de trx
                                 text("A")
                             with tag("beneficiary"):    # FIXME: Beneficiaro final
-                                text(row[10] + ' ' + row[11])
+                                text(' '.join(row[10].split()[:5]))
                         with tag("to_country"):
                             text("DO")
 
@@ -450,7 +467,7 @@ fname = sys.argv[1] if len(sys.argv) > 1 else sg.popup_get_file('Seleccionar arc
 
 if not fname:
     sg.popup("Cancel", "No se seleccionó ningún archivo")
-    raise SystemExit("Cancelando: no filename supplied")
+    raise SystemExit("Cancelado")
 else:
     gen_xml(fname)
     sg.popup('Archivo XML generado exitosamente', fname)

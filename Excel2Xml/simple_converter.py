@@ -14,6 +14,42 @@ from yattag import Doc, indent
 from datetime import datetime
 from xml.etree.ElementTree import parse, ParseError
 
+SUCURSALES = {
+    "0": 'Principal',
+    "1": 'Santo Domingo',
+    "2": 'Higüey',
+    "3": 'San Cristóbal',
+    "4": 'Barahona',
+    "5": 'San Juan',
+    "6": 'Principal',
+    "7": 'Principal',
+    "8": 'Azua',
+    "9": 'La Vega',
+    "10": 'Santiago Rodriguez',
+    "11": 'Monte Cristi',
+    "12": 'Puerto Plata',
+    "13": 'Nagua',
+    "15": 'El Seibo',
+    "16": 'Santiago',
+    "17": 'San José de Ocoa',
+    "18": 'Azua',
+    "19": 'Baní',
+    "20": 'Valverde Mao',
+    "21": 'Arenoso',
+    "22": 'Hato Mayor',
+    "23": 'Moca',
+    "24": 'Samaná',
+    "25": 'Bonao',
+    "26": 'Neyba',
+    "27": 'Dajabón',
+    "28": 'San José de las Matas',
+    "29": 'Río San Juan',
+    "30": 'Villa Rivas',
+    "31": 'Salcedo',
+    "32": 'Monte Plata',
+    "33": 'Constanza',
+}
+
 # RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
 k = []
@@ -60,16 +96,11 @@ def gen_xml(workbook):
                     text("E")
             with tag('report_code'):
                 text("CTR")
-            # with tag('entity_reference'):
-            #     text("Bagricola")
-            # with tag('fiu_ref_number'):
-            #     text("UAF Santo Domingo")
             with tag('submission_date'):
                 tmp = datetime.strptime(str(row[4]), "%Y-%m-%d %H:%M:%S")
                 text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
             with tag("currency_code_local"):
                 text("DOP")
-
             with tag("reporting_person"):
                 with tag("gender"):
                     text("F")
@@ -83,7 +114,7 @@ def gen_xml(workbook):
                     tmp = datetime.strptime("1972-10-03 00:00:00", "%Y-%m-%d %H:%M:%S")
                     text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
                 with tag("id_number"):
-                    text("001-0955138-2")
+                    text("00109551382")
                 with tag("nationality1"):
                     text("DO")
 
@@ -155,12 +186,12 @@ def gen_xml(workbook):
                     #         row[19] = "test1234"
                     #     else:
                     #         text(row[19])
-                    with tag("transaction_location"):       # FIXME: retornar nombre de sucursal, no el id
+                    with tag("transaction_location"):  # FIXME: retornar nombre de sucursal, no el id
                         if row[3] is None:
                             row[3] = "n/a"
                             text(row[3])
                         else:
-                            text(row[3])
+                            text(SUCURSALES.get(str(row[3])))
                     with tag("transaction_description"):
                         if row[41] is None:
                             row[41] = ""
@@ -202,13 +233,12 @@ def gen_xml(workbook):
                                 else:
                                     text(row[9])
                             with tag("title"):
-                                if row[9] is None or row[9] == '':
-                                    if row[9] == "M":
-                                        text("Sr.")
-                                    elif row[9] == "F":
-                                        text("Sra.")
+                                if row[9] == "M":
+                                    text("Sr.")
+                                elif row[9] == "F":
+                                    text("Sra.")
                                 else:
-                                    text(row[9])
+                                    text("n/a")
                             with tag("first_name"):
                                 text(row[10])
                             with tag("middle_name"):
@@ -225,7 +255,7 @@ def gen_xml(workbook):
                             with tag("birthdate"):
                                 text("1988-06-17T00:00:00")
                             with tag("id_number"):
-                                text(row[15])
+                                text(''.join(row[15].split('-')).strip())
                             with tag("nationality1"):
                                 text("DO")
                             with tag("residence"):
@@ -245,11 +275,11 @@ def gen_xml(workbook):
                                         elif row[27] == '' and row[28] == '' and row[26] == '':
                                             print('matched')
                                         elif row[27]:
-                                            text(row[27][:3])
+                                            text(''.join(row[27][:3].split('-')))
                                         elif row[28]:
-                                            text(row[28][:3])
+                                            text(''.join(row[28][:3].split('-')))
                                         elif row[26]:
-                                            text(row[26][:3])
+                                            text(''.join(row[26][:3].split('-')))
                                         else:
                                             pass
                                     with tag("tph_number"):
@@ -258,11 +288,11 @@ def gen_xml(workbook):
                                         elif row[27] == '' and row[28] == '' and row[26] == '':
                                             print('matched')
                                         elif row[27]:
-                                            text(row[27][4:12])
+                                            text(''.join(row[27][4:12].split('-')))
                                         elif row[26]:
-                                            text(row[26][4:12])
+                                            text(''.join(row[26][4:12].split('-')))
                                         elif row[28]:
-                                            text(row[28][4:12])
+                                            text(''.join(row[28][4:12].split('-')))
                             with tag("addresses"):
                                 with tag("address"):
                                     with tag("address_type"):
@@ -296,7 +326,7 @@ def gen_xml(workbook):
                                     if row[15] is None or row[15] == '':
                                         text("n/a")
                                     else:
-                                        text(row[15])
+                                        text(''.join(row[15].split('-')).strip())
                                 with tag("issue_country"):
                                     text("DO")
                         with tag("from_country"):
@@ -310,14 +340,14 @@ def gen_xml(workbook):
                             with tag("swift"):
                                 text("401007665")
                             with tag("branch"):
-                                text(row[3])
+                                text(SUCURSALES.get(str(row[3])))
                             with tag("account"):
                                 text(row[19])
                             with tag("currency_code"):
                                 text("DOP")
                             with tag("account_name"):
                                 text(row[10] + ' ' + row[11])
-                            with tag("client_number"):      # FIXME: Fetch client acc no.
+                            with tag("client_number"):  # FIXME: Fetch client acc no.
                                 text("5596595")
                             with tag("personal_account_type"):
                                 text("C")
@@ -326,11 +356,10 @@ def gen_xml(workbook):
                                     with tag("gender"):
                                         text(row[9])
                                     with tag("title"):
-                                        if row[9] is None or row[9] == '':
-                                            if row[9] == "M":
-                                                text("Sr.")
-                                            elif row[9] == "F":
-                                                text("Sra.")
+                                        if row[9] == "M":
+                                            text("Sr.")
+                                        elif row[9] == "F":
+                                            text("Sra.")
                                         else:
                                             text(row[9])
                                     with tag("first_name"):
@@ -349,7 +378,7 @@ def gen_xml(workbook):
                                     with tag("birthdate"):
                                         text("1988-06-17T00:00:00")
                                     with tag("id_number"):
-                                        text(row[15])
+                                        text(''.join(row[15].split('-')).strip())
                                     with tag("nationality1"):
                                         text("DO")
                                     with tag("residence"):
@@ -369,22 +398,22 @@ def gen_xml(workbook):
                                                 elif row[27] == '' and row[28] == '' and row[26] == '':
                                                     text("n/a")
                                                 elif row[27]:
-                                                    text(row[27][:3])
+                                                    text(''.join(row[27][:3].split('-')))
                                                 elif row[28]:
-                                                    text(row[28][:3])
+                                                    text(''.join(row[28][:3].split('-')))
                                                 elif row[26]:
-                                                    text(row[26][:3])
+                                                    text(''.join(row[26][:3].split('-')))
                                             with tag("tph_number"):
                                                 if row[27] is None and row[28] is None and row[26] is None:
                                                     text("n/a")
                                                 elif row[27] == '' and row[28] == '' and row[26] == '':
                                                     text("n/a")
                                                 elif row[27]:
-                                                    text(row[27][4:12])
-                                                elif row[26]:
-                                                    text(row[26][4:12])
+                                                    text(''.join(row[27][4:12].split('-')))
                                                 elif row[28]:
-                                                    text(row[28][4:12])
+                                                    text(''.join(row[28][4:12].split('-')))
+                                                elif row[26]:
+                                                    text(''.join(row[26][4:12].split('-')))
                                     with tag("addresses"):
                                         with tag("address"):
                                             with tag("address_type"):
@@ -418,21 +447,21 @@ def gen_xml(workbook):
                                             if row[15] is None or row[15] == '':
                                                 text("n/a")
                                             else:
-                                                text(row[15])
+                                                text(''.join(row[15].split('-')).strip())
                                         with tag("issue_country"):
                                             text("DO")
                                 with tag("role"):
                                     text("A")
-                            with tag("opened"):         # FIXME: Fecha apertura cta
+                            with tag("opened"):  # FIXME: Fecha apertura cta
                                 if row[37] is None or row[37] == '':
                                     row[37] = datetime.strptime("2000-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
                                 tmp = datetime.strptime(str(row[37]), "%Y-%m-%d %H:%M:%S")
                                 text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
-                            with tag("balance"):        # FIXME: Balance luego de realizar trx
+                            with tag("balance"):  # FIXME: Balance luego de realizar trx
                                 text("1000000")
-                            with tag("status_code"):    # FIXME: Fetch estado cta al inicio de trx
+                            with tag("status_code"):  # FIXME: Fetch estado cta al inicio de trx
                                 text("A")
-                            with tag("beneficiary"):    # FIXME: Beneficiaro final
+                            with tag("beneficiary"):  # FIXME: Beneficiaro final
                                 text(' '.join(row[10].split()[:5]))
                         with tag("to_country"):
                             text("DO")

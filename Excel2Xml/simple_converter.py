@@ -166,11 +166,6 @@ def gen_xml(workbook):
                     row[74] = "Transacciones que sobrepasaron los USD$15,000.00"
                 else:
                     text(row[74])
-            # with tag("action"):
-            #     if row[80] is None:
-            #         row[80] = "Acciones a tomar"
-            #     else:
-            #         text(row[80])
 
         # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
         # ? y se añade un nodo transacción por fila del RTE
@@ -181,12 +176,7 @@ def gen_xml(workbook):
                 with tag("transaction"):
                     with tag("transactionnumber"):  # ! CHECK col in excel file
                         text(row[77])
-                    # with tag("internal_ref_number"):
-                    #     if row[19] is None or row[19] == '':
-                    #         row[19] = "test1234"
-                    #     else:
-                    #         text(row[19])
-                    with tag("transaction_location"):  # FIXME: retornar nombre de sucursal, no el id
+                    with tag("transaction_location"):
                         if row[3] is None:
                             row[3] = "n/a"
                             text(row[3])
@@ -272,21 +262,15 @@ def gen_xml(workbook):
                                     with tag("tph_country_prefix"):
                                         if row[27] is None and row[28] is None and row[26] is None:
                                             text("n/a")
-                                        elif row[27] == '' and row[28] == '' and row[26] == '':
-                                            print('matched')
                                         elif row[27]:
                                             text(''.join(row[27][:3].split('-')))
                                         elif row[28]:
                                             text(''.join(row[28][:3].split('-')))
                                         elif row[26]:
                                             text(''.join(row[26][:3].split('-')))
-                                        else:
-                                            pass
                                     with tag("tph_number"):
                                         if row[27] is None and row[28] is None and row[26] is None:
                                             text("n/a")
-                                        elif row[27] == '' and row[28] == '' and row[26] == '':
-                                            print('matched')
                                         elif row[27]:
                                             text(''.join(row[27][4:12].split('-')))
                                         elif row[26]:

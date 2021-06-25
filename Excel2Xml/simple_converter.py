@@ -17,40 +17,78 @@ import timeit
 import time
 
 SUCURSALES = {
-    "0": 'Principal',
-    "1": 'Santo Domingo',
-    "2": 'Higüey',
-    "3": 'San Cristóbal',
-    "4": 'Barahona',
-    "5": 'San Juan',
-    "6": 'San Francisco de Macorís',
-    "7": 'Comendador',
-    "8": 'Azua',
-    "9": 'La Vega',
-    "10": 'Santiago Rodriguez',
-    "11": 'Monte Cristi',
-    "12": 'Puerto Plata',
-    "13": 'Nagua',
-    "15": 'El Seibo',
-    "16": 'Santiago',
-    "17": 'San José de Ocoa',
-    "18": 'Azua',
-    "19": 'Baní',
-    "20": 'Valverde Mao',
-    "21": 'Arenoso',
-    "22": 'Hato Mayor',
-    "23": 'Moca',
-    "24": 'Samaná',
-    "25": 'Bonao',
-    "26": 'Neyba',
-    "27": 'Dajabón',
-    "28": 'San José de las Matas',
-    "29": 'Río San Juan',
-    "30": 'Villa Rivas',
-    "31": 'Salcedo',
-    "32": 'Monte Plata',
-    "33": 'Constanza',
+    "0": 'PRINCIPAL',
+    "1": 'SANTO DOMINGO',
+    "2": 'HIGUEY',
+    "3": 'SAN CRISTOBAL',
+    "4": 'BARAHONA',
+    "5": 'SAN JUAN DE LA MAGUANA',
+    "6": 'SAN FRANCISCO MACORIS',
+    "7": 'COMENDADOR',
+    "8": 'COTUI',
+    "9": 'LA VEGA',
+    "10": 'SANTIAGO RODRIGUEZ',
+    "11": 'MONTE CRISTI',
+    "12": 'PUERTO PLATA',
+    "13": 'NAGUA',
+    "15": 'EL SEYBO',
+    "16": 'SANTIAGO',
+    "17": 'SAN JOSE DE OCOA',
+    "18": 'AZUA',
+    "19": 'BANI',
+    "20": 'VALVERDE MAO',
+    "21": 'ARENOSO',
+    "22": 'HATO MAYOR',
+    "23": 'MOCA',
+    "24": 'SAMANA',
+    "25": 'BONAO',
+    "26": 'NEYBA',
+    "27": 'DAJABON',
+    "28": 'SAN JOSE DE LAS MATAS',
+    "29": 'RIO SAN JUAN',
+    "30": 'VILLA RIVA',
+    "31": 'SALCEDO',
+    "32": 'MONTE PLATA',
+    "33": 'CONSTANZA',
 }
+
+DIRECCIONES = {
+    "PRINCIPAL": "Ave.George Washington NO. 601",
+    "SANTO DOMINGO": "Ave.George Washington NO. 601",
+    "SANTIAGO RODRIGUEZ": "C/ Dr. Darío Gómez No. 64",
+    "MONTE CRISTI": "C/ BENITO MONCION, ESQ. SANCHEZ NO.60",
+    "PUERTO PLATA": "C/ PRINCIPAL PROF. JUAN BOSCH NO.4",
+    "CONSTANZA": "AV. ANTONIO ABUD ISSAC",
+    "NAGUA": "C/ 27 DE FEBRERO, ESQ. MERCEDES BELLO NO.24",
+    "EL SEYBO": "C/ MANUELA DIEZ JIMENEZ No.10",
+    "SANTIAGO": "AV. JUAN PABLO DUARTE, ESQ. ESTADO DE ISRAEL",
+    "SAN JOSE DE OCOA": "C/ DUARTE ESQ. ALTAGRACIA No.40",
+    "AZUA": "C/ EMILIO PRUDHOMME No.35",
+    "BANI": "C/ NUESTRA SRA. DE REGLA No.19 ESQ. SANCHEZ",
+    "HIGUEY": "C/ ALTAGRACIA ESQ. LAS CARRERAS",
+    "VALVERDE MAO": "AV. BENITO MONCION",
+    "ARENOSO": "AV. DUARTE No.61",
+    "HATO MAYOR": "C/ MELCHOR CONTIN ALPHAU No.39, MILLON",
+    "MOCA": "CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL",
+    "SAMANA": "C/ SANTA BARBARA, EDIF. OFICINAS PUBLICAS",
+    "BONAO": "C/ DUARTE No.279, SECTOR EL 90",
+    "NEYBA": "C/ SAN BARTOLOME No.41",
+    "DAJABON": "AV. PABLO REYES NO.29",
+    "SAN JOSE DE LAS MATAS": "C/ 16 DE AGOSTO No.18, CENTRO DEL PUEBLO",
+    "RIO SAN JUAN": "AUTOPISTA DR. DOMINGO ANTIONIO GONZALEZ",
+    "SAN CRISTOBAL": "C/ GENERAL CABRAL No. 34",
+    "VILLA RIVA": "C/ 27 DE FEBRERO ESQ. COLON NO.57",
+    "MONTE PLATA": "C/ GENERAL MATIAS MORENO ESQ. ALTAGRACIA No. 7",
+    "CONSTANZA": "AV. ANTONIO ABUD ISSAC",
+    "BARAHONA": "AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU",
+    "SAN JUAN DE LA MAGUANA": "C/ SANCHEZ No.67",
+    "SAN FRANCISCO MACORIS": "Av. Frank Grullón, Salida hacia Nagua",
+    "SALCEDO": "C/ DUARTE, ESQ. HERMANAS MIRABAL",
+    "COMENDADOR": "C/ 27 DE FEB. ESQ. LUZ CELESTE LARA No.20",
+    "COTUI": "C/ PADRE FANTINO NO.5",
+    "LA VEGA": "PROFESOR JUAN BOSCH, ESQ. COMANDANTE JIMÉNEZ",
+}
+
 
 # RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
@@ -203,11 +241,13 @@ def gen_xml(workbook):
                     with tag("transactionnumber"):  # ! CHECK col in excel file
                         text(row[77])
                     with tag("transaction_location"):
-                        if row[3] is None:
-                            row[3] = "n/a"
-                            text(row[3])
+                        if row[79] is None or row[79] == '':
+                            suc = SUCURSALES.get(str(row[3])).upper()
+                            text(DIRECCIONES.get(suc))
+                            # text(row[79])
                         else:
-                            text(SUCURSALES.get(str(row[3])))
+                            # text(SUCURSALES.get(str(row[3])))
+                            text(row[79])
                     with tag("transaction_description"):
                         if row[41] is None:
                             row[41] = ""

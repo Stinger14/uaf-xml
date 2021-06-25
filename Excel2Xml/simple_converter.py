@@ -331,8 +331,8 @@ def gen_xml(workbook):
                                 text("DOP")
                             with tag("account_name"):
                                 text(row[10] + ' ' + row[11])
-                            with tag("client_number"):  # FIXME: Fetch client acc no.
-                                text("5596595")
+                            with tag("client_number"):
+                                text(row[78])
                             with tag("personal_account_type"):
                                 text("C")
                             with tag("signatory"):
@@ -406,7 +406,7 @@ def gen_xml(workbook):
                                                 if row[25] is None or row[25] == '':
                                                     text("n/a")
                                                 else:
-                                                    text(row[25])
+                                                    text(row[79])
                                             with tag("city"):
                                                 if row[23] is None or row[23] == '':
                                                     text("n/a")

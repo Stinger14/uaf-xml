@@ -125,7 +125,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>125133</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -230,7 +230,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>125133</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -334,7 +334,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>104029</address>
+                        <address>C/ NUESTRA SRA. DE REGLA No.19 ESQ. SANCHEZ  </address>
                         <city>VILLA FUNDACI&#211;N                    </city>
                         <country_code>DO</country_code>
                         <state>PERAVIA                            </state>
@@ -438,7 +438,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -542,7 +542,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -646,7 +646,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -750,7 +750,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442301</address>
+                        <address>n/a</address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -854,7 +854,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442301</address>
+                        <address>n/a</address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -958,7 +958,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442301</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -1062,7 +1062,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>231428</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -1167,7 +1167,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>125133</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -1271,7 +1271,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>215051</address>
+                        <address>C/ SANCHEZ No.67                             </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -1375,7 +1375,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>471269</address>
+                        <address>n/a</address>
                         <city>LUPER&#211;N                            </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -1479,7 +1479,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>215051</address>
+                        <address>C/ INDEPENDENCIA EDIF, No.115                </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -1583,7 +1583,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>215051</address>
+                        <address>C/ MIGUEL ANT. MORILLO No.73                 </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -1687,7 +1687,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579403</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -1791,7 +1791,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579403</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -1895,7 +1895,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>576723</address>
+                        <address>C/ GENERAL CABRAL No.34                      </address>
                         <city>SAN CRIST&#211;BAL                      </city>
                         <country_code>DO</country_code>
                         <state>SAN CRIST&#211;BAL                      </state>
@@ -1999,7 +1999,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>104029</address>
+                        <address>C/ NUESTRA SRA. DE REGLA No.19 ESQ. SANCHEZ  </address>
                         <city>VILLA FUNDACI&#211;N                    </city>
                         <country_code>DO</country_code>
                         <state>PERAVIA                            </state>
@@ -2103,7 +2103,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>576723</address>
+                        <address>C/ GENERAL CABRAL No.34                      </address>
                         <city>SAN CRIST&#211;BAL                      </city>
                         <country_code>DO</country_code>
                         <state>SAN CRIST&#211;BAL                      </state>
@@ -2207,7 +2207,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>471269</address>
+                        <address>C/ PRINCIPAL PROF. JUAN BOSCH NO.4           </address>
                         <city>LUPER&#211;N                            </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -2311,7 +2311,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>471269</address>
+                        <address>C/ DUARTE NO.65                              </address>
                         <city>LUPER&#211;N                            </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -2415,7 +2415,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>471269</address>
+                        <address>C/ INDEPENDENCIA No.49                       </address>
                         <city>LUPER&#211;N                            </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -2519,7 +2519,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>471269</address>
+                        <address>C/ SAN CRISTOBAL COLON No.64                 </address>
                         <city>LUPER&#211;N                            </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -2623,7 +2623,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>153832</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -2727,7 +2727,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>231428</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -2831,7 +2831,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>530423</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -2935,7 +2935,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>530423</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -3039,7 +3039,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>530423</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -3143,7 +3143,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>19236</address>
+                        <address>C/ 16 DE AGOSTO No.18, CENTRO DEL PUEBLO     </address>
                         <city>J&#193;NICO                             </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -3247,7 +3247,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>19236</address>
+                        <address>AV. SANTIAGOP No.14                          </address>
                         <city>J&#193;NICO                             </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -3351,7 +3351,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>514600</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -3455,7 +3455,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>514600</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -3559,7 +3559,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>514600</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -3663,7 +3663,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>66657</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -3767,7 +3767,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>66657</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -3871,7 +3871,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>66657</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -3975,7 +3975,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -4079,7 +4079,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -4183,7 +4183,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>488757</address>
+                        <address>C/ 27 DE FEBRERO ESQ. COLON NO.57            </address>
                         <city>VILLA RIVAS                        </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -4287,7 +4287,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>153832</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -4391,7 +4391,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>488757</address>
+                        <address>C/ OLEGARIO TENARES                          </address>
                         <city>VILLA RIVAS                        </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -4495,7 +4495,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>n/a</address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -4599,7 +4599,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>612290</address>
+                        <address>C/ PRINCIPAL PROF. JUAN BOSCH NO.4           </address>
                         <city>VILLA MONTELLANO                   </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -4703,7 +4703,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>612290</address>
+                        <address>C/ DUARTE NO.65                              </address>
                         <city>VILLA MONTELLANO                   </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -4807,7 +4807,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>612290</address>
+                        <address>C/ INDEPENDENCIA No.49                       </address>
                         <city>VILLA MONTELLANO                   </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -4911,7 +4911,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>612290</address>
+                        <address>C/ SAN CRISTOBAL COLON No.64                 </address>
                         <city>VILLA MONTELLANO                   </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -5015,7 +5015,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>612290</address>
+                        <address>n/a</address>
                         <city>VILLA MONTELLANO                   </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -5119,7 +5119,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -5223,7 +5223,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -5327,7 +5327,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -5431,7 +5431,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>229168</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>LA OTRA BANDA (D. M.).             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -5535,7 +5535,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>46073</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -5639,7 +5639,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>46073</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -5743,7 +5743,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>486456</address>
+                        <address>n/a</address>
                         <city>GASPAR HERN&#193;NDEZ                   </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -5847,7 +5847,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>486456</address>
+                        <address>C/ DUARTE No.70                              </address>
                         <city>GASPAR HERN&#193;NDEZ                   </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -5951,7 +5951,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>486456</address>
+                        <address>C/ MARIA GOMEZ ESQ. SANTIAGO HIDALGO         </address>
                         <city>GASPAR HERN&#193;NDEZ                   </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -6055,7 +6055,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>639594</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -6159,7 +6159,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>639594</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -6263,7 +6263,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>639594</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>BARAHONA                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -6367,7 +6367,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -6471,7 +6471,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>69471</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -6575,7 +6575,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>69471</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -6679,7 +6679,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>599544</address>
+                        <address>C/ GENERAL MATIAS MORENO ESQ. ALTAGRACIA No.7</address>
                         <city>YAMAS&#193;                             </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -6783,7 +6783,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>599544</address>
+                        <address>n/a</address>
                         <city>YAMAS&#193;                             </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -6887,7 +6887,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>599544</address>
+                        <address>n/a</address>
                         <city>YAMAS&#193;                             </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -6991,7 +6991,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>653457</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>EL PE&#209;&#211;N                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -7095,7 +7095,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>653457</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>EL PE&#209;&#211;N                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -7199,7 +7199,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>653457</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>EL PE&#209;&#211;N                           </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -7303,7 +7303,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>87086</address>
+                        <address>C/ GENERAL MATIAS MORENO ESQ. ALTAGRACIA No.7</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -7407,7 +7407,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>87086</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -7511,7 +7511,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>69471</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -7615,7 +7615,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>87086</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -7719,7 +7719,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>247999</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>MOCA                               </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -7823,7 +7823,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>26736</address>
+                        <address>C/ MELCHOR CONTIN ALPHAU No.39, MILLON       </address>
                         <city>EL VALLE                           </city>
                         <country_code>DO</country_code>
                         <state>HATO MAYOR                         </state>
@@ -7927,7 +7927,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>26736</address>
+                        <address>n/a</address>
                         <city>EL VALLE                           </city>
                         <country_code>DO</country_code>
                         <state>HATO MAYOR                         </state>
@@ -8031,7 +8031,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>26736</address>
+                        <address>n/a</address>
                         <city>EL VALLE                           </city>
                         <country_code>DO</country_code>
                         <state>HATO MAYOR                         </state>
@@ -8135,7 +8135,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>647745</address>
+                        <address>C/ SAN BARTOLOME No.41                       </address>
                         <city>LA DESCUBIERTA                     </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -8239,7 +8239,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>647745</address>
+                        <address>C/ DUARTE No.82                              </address>
                         <city>LA DESCUBIERTA                     </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -8343,7 +8343,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>647745</address>
+                        <address>n/a</address>
                         <city>LA DESCUBIERTA                     </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -8447,7 +8447,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>216926</address>
+                        <address>AV. ANTONIO ABUD ISSAC                       </address>
                         <city>CONSTANZA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -8551,7 +8551,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>265579</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -8655,7 +8655,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>265579</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -8759,7 +8759,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>251491</address>
+                        <address>AV. ANTONIO ABUD ISSAC                       </address>
                         <city>TIREO (D. M.).                     </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -8863,7 +8863,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>333959</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -8967,7 +8967,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>266936</address>
+                        <address>C/ 27 DE FEB. ESQ. LUZ CELESTE LARA No.20    </address>
                         <city>COMENDADOR                         </city>
                         <country_code>DO</country_code>
                         <state>EL&#205;AS PI&#209;A                         </state>
@@ -9071,7 +9071,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>266936</address>
+                        <address>C/ COLON EDIF. 2, APTO. No.1                 </address>
                         <city>COMENDADOR                         </city>
                         <country_code>DO</country_code>
                         <state>EL&#205;AS PI&#209;A                         </state>
@@ -9175,7 +9175,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>589553</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>VILLA HERMOSA                      </city>
                         <country_code>DO</country_code>
                         <state>LA ROMANA                          </state>
@@ -9279,7 +9279,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>589553</address>
+                        <address>n/a</address>
                         <city>VILLA HERMOSA                      </city>
                         <country_code>DO</country_code>
                         <state>LA ROMANA                          </state>
@@ -9383,7 +9383,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>333959</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -9487,7 +9487,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>589553</address>
+                        <address>n/a</address>
                         <city>VILLA HERMOSA                      </city>
                         <country_code>DO</country_code>
                         <state>LA ROMANA                          </state>
@@ -9591,7 +9591,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>385677</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>LAS LAGUNAS DE NISIB&#211;N (D. M.).    </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -9695,7 +9695,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>653281</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>MICHES                             </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -9799,7 +9799,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>653281</address>
+                        <address>n/a</address>
                         <city>MICHES                             </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -9903,7 +9903,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>653281</address>
+                        <address>n/a</address>
                         <city>MICHES                             </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -10007,7 +10007,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>385677</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>LAS LAGUNAS DE NISIB&#211;N (D. M.).    </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -10111,7 +10111,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>462974</address>
+                        <address>C/ 27 DE FEB. ESQ. LUZ CELESTE LARA No.20    </address>
                         <city>COMENDADOR                         </city>
                         <country_code>DO</country_code>
                         <state>EL&#205;AS PI&#209;A                         </state>
@@ -10215,7 +10215,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>462974</address>
+                        <address>C/ COLON EDIF. 2, APTO. No.1                 </address>
                         <city>COMENDADOR                         </city>
                         <country_code>DO</country_code>
                         <state>EL&#205;AS PI&#209;A                         </state>
@@ -10319,7 +10319,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -10423,7 +10423,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -10527,7 +10527,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>455617</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>R&#205;O VERDE ARRIBA (D. M.).          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -10631,7 +10631,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>636805</address>
+                        <address>C/ 27 DE FEBRERO ESQ. COLON NO.57            </address>
                         <city>CASTILLO                           </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -10735,7 +10735,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>636805</address>
+                        <address>C/ OLEGARIO TENARES                          </address>
                         <city>CASTILLO                           </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -10839,7 +10839,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>598180</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -10943,7 +10943,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>598180</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -11047,7 +11047,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>598180</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -11151,7 +11151,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442423</address>
+                        <address>C/ 16 DE AGOSTO No.18, CENTRO DEL PUEBLO     </address>
                         <city>J&#193;NICO                             </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -11255,7 +11255,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442423</address>
+                        <address>AV. SANTIAGOP No.14                          </address>
                         <city>J&#193;NICO                             </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -11359,7 +11359,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>452884</address>
+                        <address>Av. Frank Grull&#243;n, Salida hacia Nagua        </address>
                         <city>SAN FRANCISCO DE MACOR&#205;S           </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -11463,7 +11463,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>452884</address>
+                        <address>C/ INDEPENDENCIA ESQ. COLON                  </address>
                         <city>SAN FRANCISCO DE MACOR&#205;S           </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -11567,7 +11567,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>99092</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>MOCA                               </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -11672,7 +11672,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>89738</address>
+                        <address>C/ 27 DE FEBRERO, ESQ. MERCEDES BELLO NO.24  </address>
                         <city>ARROYO SALADO (D. M.).             </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -11776,7 +11776,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>224408</address>
+                        <address>C/ SANCHEZ No.67                             </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -11880,7 +11880,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>224408</address>
+                        <address>C/ INDEPENDENCIA EDIF, No.115                </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -11984,7 +11984,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>224408</address>
+                        <address>C/ MIGUEL ANT. MORILLO No.73                 </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -12088,7 +12088,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>157983</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -12192,7 +12192,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>402738</address>
+                        <address>C/ DUARTE No.279, SECTOR EL 90               </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -12296,7 +12296,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>360306</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>MICHES                             </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -12400,7 +12400,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>360306</address>
+                        <address>n/a</address>
                         <city>MICHES                             </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -12504,7 +12504,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>360306</address>
+                        <address>n/a</address>
                         <city>MICHES                             </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -12608,7 +12608,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -12712,7 +12712,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -12816,7 +12816,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -12920,7 +12920,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -13024,7 +13024,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>157983</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -13128,7 +13128,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>465634</address>
+                        <address>C/ 27 DE FEBRERO, ESQ. MERCEDES BELLO NO.24  </address>
                         <city>NAGUA                              </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -13232,7 +13232,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>32870</address>
+                        <address>n/a</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -13336,7 +13336,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454371</address>
+                        <address>n/a</address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -13440,7 +13440,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454371</address>
+                        <address>n/a</address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -13544,7 +13544,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454371</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -13648,7 +13648,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -13752,7 +13752,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>n/a</address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -13856,7 +13856,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>32870</address>
+                        <address>C/ GENERAL MATIAS MORENO ESQ. ALTAGRACIA No.7</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -13960,7 +13960,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>32870</address>
+                        <address>n/a</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -14064,7 +14064,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579988</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -14168,7 +14168,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579988</address>
+                        <address>n/a</address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -14272,7 +14272,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>134297</address>
+                        <address>C/ SANTA BARBARA, EDIF. OFICINAS PUBLICAS    </address>
                         <city>SAMAN&#193;                             </city>
                         <country_code>DO</country_code>
                         <state>SAMAN&#193;                             </state>
@@ -14376,7 +14376,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>134297</address>
+                        <address>C/ SANCHEZ EDIF. No.50                       </address>
                         <city>SAMAN&#193;                             </city>
                         <country_code>DO</country_code>
                         <state>SAMAN&#193;                             </state>
@@ -14480,7 +14480,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579988</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -14584,7 +14584,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>638483</address>
+                        <address>C/ GENERAL CABRAL No.34                      </address>
                         <city>SAN CRIST&#211;BAL                      </city>
                         <country_code>DO</country_code>
                         <state>SAN CRIST&#211;BAL                      </state>
@@ -14688,7 +14688,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579988</address>
+                        <address>n/a</address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -14792,7 +14792,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>588511</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>SANTO DOMINGO NORTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -14896,7 +14896,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -15000,7 +15000,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>n/a</address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -15104,7 +15104,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -15208,7 +15208,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -15312,7 +15312,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>588511</address>
+                        <address>n/a</address>
                         <city>SANTO DOMINGO NORTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -15416,7 +15416,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>588511</address>
+                        <address>n/a</address>
                         <city>SANTO DOMINGO NORTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -15520,7 +15520,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>397185</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -15624,7 +15624,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>397185</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -15728,7 +15728,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>42058</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -15832,7 +15832,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>32870</address>
+                        <address>n/a</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -15936,7 +15936,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>66794</address>
+                        <address>AV. DUARTE No.61                             </address>
                         <city>CRISTO REY DE GUARAGUAO (D. M.).   </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -16040,7 +16040,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>398663</address>
+                        <address>C/ DUARTE, ESQ. HERMANAS MIRABAL             </address>
                         <city>MOCA                               </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -16144,7 +16144,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>460658</address>
+                        <address>AV. PABLO REYES NO.29                        </address>
                         <city>DAJAB&#211;N                            </city>
                         <country_code>DO</country_code>
                         <state>DAJAB&#211;N                            </state>
@@ -16248,7 +16248,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>460658</address>
+                        <address>C/ DUARTE No.88                              </address>
                         <city>DAJAB&#211;N                            </city>
                         <country_code>DO</country_code>
                         <state>DAJAB&#211;N                            </state>
@@ -16352,7 +16352,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>20169</address>
+                        <address>C/ Dr. Dar&#237;o G&#243;mez No. 64                    </address>
                         <city>SAN IGNACIO DE SABANETA            </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO RODR&#205;GUEZ                 </state>
@@ -16456,7 +16456,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>20169</address>
+                        <address>ANDRES MEDINA No.109                         </address>
                         <city>SAN IGNACIO DE SABANETA            </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO RODR&#205;GUEZ                 </state>
@@ -16560,7 +16560,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>247395</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>PARA&#205;SO                            </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -16664,7 +16664,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>247395</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>PARA&#205;SO                            </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -16768,7 +16768,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>247395</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>PARA&#205;SO                            </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -16872,7 +16872,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>32870</address>
+                        <address>C/ GENERAL MATIAS MORENO ESQ. ALTAGRACIA No.7</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -16976,7 +16976,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>32870</address>
+                        <address>n/a</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -17080,7 +17080,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>456044</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -17184,7 +17184,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>456044</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -17288,7 +17288,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -17392,7 +17392,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>59596</address>
+                        <address>C/ DUARTE No.279, SECTOR EL 90               </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -17496,7 +17496,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>n/a</address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -17600,7 +17600,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>456044</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -17704,7 +17704,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>456044</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -17808,7 +17808,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>456044</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -17912,7 +17912,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>456044</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -18016,7 +18016,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>AV. JUAN PABLO DUARTE, ESQ. ESTADO DE ISRAEL </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -18120,7 +18120,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>566967</address>
+                        <address>C/ PRINCIPAL EDIF. AGRICULTURA, PRIMERA PLANT</address>
                         <city>PADRE LAS CASAS                    </city>
                         <country_code>DO</country_code>
                         <state>AZUA                               </state>
@@ -18224,7 +18224,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -18328,7 +18328,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>C/ 27 DE FEBRERO, ESQ. MERCEDES BELLO NO.24  </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -18432,7 +18432,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>536798</address>
+                        <address>AV. DUARTE No.61                             </address>
                         <city>ARENOSO                            </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -18536,7 +18536,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>566967</address>
+                        <address>C/ EMILIO PRUDHOMME No.35                    </address>
                         <city>PADRE LAS CASAS                    </city>
                         <country_code>DO</country_code>
                         <state>AZUA                               </state>
@@ -18640,7 +18640,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>231251</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -18744,7 +18744,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>565779</address>
+                        <address>C/ MELCHOR CONTIN ALPHAU No.39, MILLON       </address>
                         <city>CONSUELO                           </city>
                         <country_code>DO</country_code>
                         <state>SAN PEDRO DE MACOR&#205;S               </state>
@@ -18848,7 +18848,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>485623</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>CONSTANZA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -18952,7 +18952,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>565779</address>
+                        <address>n/a</address>
                         <city>CONSUELO                           </city>
                         <country_code>DO</country_code>
                         <state>SAN PEDRO DE MACOR&#205;S               </state>
@@ -19056,7 +19056,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>565779</address>
+                        <address>n/a</address>
                         <city>CONSUELO                           </city>
                         <country_code>DO</country_code>
                         <state>SAN PEDRO DE MACOR&#205;S               </state>
@@ -19160,7 +19160,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>361729</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -19264,7 +19264,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>361729</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -19368,7 +19368,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -19472,7 +19472,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -19576,7 +19576,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>270354</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>RANCHO ARRIBA                      </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -19680,7 +19680,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>270354</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>RANCHO ARRIBA                      </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -19784,7 +19784,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -19888,7 +19888,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -19992,7 +19992,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>485623</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>CONSTANZA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -20096,7 +20096,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579988</address>
+                        <address>n/a</address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -20200,7 +20200,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -20304,7 +20304,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -20408,7 +20408,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -20512,7 +20512,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>221597</address>
+                        <address>C/ SANCHEZ No.67                             </address>
                         <city>JUAN DE HERRERA                    </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -20616,7 +20616,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>221597</address>
+                        <address>C/ INDEPENDENCIA EDIF, No.115                </address>
                         <city>JUAN DE HERRERA                    </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -20720,7 +20720,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>221597</address>
+                        <address>C/ MIGUEL ANT. MORILLO No.73                 </address>
                         <city>JUAN DE HERRERA                    </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -20824,7 +20824,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>160061</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -20928,7 +20928,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>160061</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -21032,7 +21032,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>216926</address>
+                        <address>AV. ANTONIO ABUD ISSAC                       </address>
                         <city>CONSTANZA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -21136,7 +21136,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>361729</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -21240,7 +21240,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>361729</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -21344,7 +21344,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>361729</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -21448,7 +21448,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>361729</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -21552,7 +21552,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>117726</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -21656,7 +21656,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>117726</address>
+                        <address>n/a</address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -21760,7 +21760,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>579988</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>MAO                                </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -21864,7 +21864,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>5710</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -21968,7 +21968,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -22072,7 +22072,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>5710</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -22176,7 +22176,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>294537</address>
+                        <address>C/ DUARTE, ESQ. HERMANAS MIRABAL             </address>
                         <city>SALCEDO                            </city>
                         <country_code>DO</country_code>
                         <state>HERMANAS MIRABAL                   </state>
@@ -22280,7 +22280,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>525036</address>
+                        <address>C/ MELCHOR CONTIN ALPHAU No.39, MILLON       </address>
                         <city>HATO MAYOR                         </city>
                         <country_code>DO</country_code>
                         <state>HATO MAYOR                         </state>
@@ -22384,7 +22384,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>525036</address>
+                        <address>n/a</address>
                         <city>HATO MAYOR                         </city>
                         <country_code>DO</country_code>
                         <state>HATO MAYOR                         </state>
@@ -22488,7 +22488,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>525036</address>
+                        <address>n/a</address>
                         <city>HATO MAYOR                         </city>
                         <country_code>DO</country_code>
                         <state>HATO MAYOR                         </state>
@@ -22592,7 +22592,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>388482</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -22696,7 +22696,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>388482</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -22800,7 +22800,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>388482</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -22904,7 +22904,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -23008,7 +23008,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>219635</address>
+                        <address>C/ SANCHEZ No.67                             </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -23112,7 +23112,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>219635</address>
+                        <address>C/ INDEPENDENCIA EDIF, No.115                </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -23216,7 +23216,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>219635</address>
+                        <address>C/ MIGUEL ANT. MORILLO No.73                 </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -23320,7 +23320,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>612108</address>
+                        <address>C/ GENERAL CABRAL No.34                      </address>
                         <city>BAJOS DE HAINA                     </city>
                         <country_code>DO</country_code>
                         <state>SAN CRIST&#211;BAL                      </state>
@@ -23424,7 +23424,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>281244</address>
+                        <address>AV. ANTONIO ABUD ISSAC                       </address>
                         <city>TIREO (D. M.).                     </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -23528,7 +23528,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>618960</address>
+                        <address>AV. ANTONIO ABUD ISSAC                       </address>
                         <city>TIREO (D. M.).                     </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -23632,7 +23632,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>558617</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -23736,7 +23736,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>558617</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -23840,7 +23840,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>359776</address>
+                        <address>C/ EMILIO PRUDHOMME No.35                    </address>
                         <city>NUEVO SABANA YEGUA (D.M.)          </city>
                         <country_code>DO</country_code>
                         <state>AZUA                               </state>
@@ -23944,7 +23944,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>359776</address>
+                        <address>C/ PRINCIPAL EDIF. AGRICULTURA, PRIMERA PLANT</address>
                         <city>NUEVO SABANA YEGUA (D.M.)          </city>
                         <country_code>DO</country_code>
                         <state>AZUA                               </state>
@@ -24048,7 +24048,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>469803</address>
+                        <address>C/ 27 DE FEB. ESQ. LUZ CELESTE LARA No.20    </address>
                         <city>MATAYAYA                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -24152,7 +24152,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>469803</address>
+                        <address>C/ COLON EDIF. 2, APTO. No.1                 </address>
                         <city>MATAYAYA                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -24256,7 +24256,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -24360,7 +24360,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>594566</address>
+                        <address>C/ EMILIO PRUDHOMME No.35                    </address>
                         <city>AZUA                               </city>
                         <country_code>DO</country_code>
                         <state>AZUA                               </state>
@@ -24464,7 +24464,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>311003</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>CAYETANO GERMOS&#201;N                  </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -24568,7 +24568,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>594566</address>
+                        <address>C/ PRINCIPAL EDIF. AGRICULTURA, PRIMERA PLANT</address>
                         <city>AZUA                               </city>
                         <country_code>DO</country_code>
                         <state>AZUA                               </state>
@@ -24672,7 +24672,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>552239</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -24776,7 +24776,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>552239</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -24880,7 +24880,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>552239</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -24984,7 +24984,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>395998</address>
+                        <address>C/ SANCHEZ No.67                             </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -25088,7 +25088,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>395998</address>
+                        <address>C/ INDEPENDENCIA EDIF, No.115                </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -25192,7 +25192,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>395998</address>
+                        <address>C/ MIGUEL ANT. MORILLO No.73                 </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -25296,7 +25296,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>65945</address>
+                        <address>C/ DUARTE, ESQ. HERMANAS MIRABAL             </address>
                         <city>BLANCO                             </city>
                         <country_code>DO</country_code>
                         <state>HERMANAS MIRABAL                   </state>
@@ -25400,7 +25400,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -25504,7 +25504,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>580892</address>
+                        <address>C/ DUARTE, ESQ. HERMANAS MIRABAL             </address>
                         <city>TENARES                            </city>
                         <country_code>DO</country_code>
                         <state>HERMANAS MIRABAL                   </state>
@@ -25608,7 +25608,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>n/a</address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -25712,7 +25712,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>177293</address>
+                        <address>C/ SAN CRISTOBAL COLON No.64                 </address>
                         <city>IMBERT                             </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -25816,7 +25816,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>638483</address>
+                        <address>C/ GENERAL CABRAL No.34                      </address>
                         <city>SAN CRIST&#211;BAL                      </city>
                         <country_code>DO</country_code>
                         <state>SAN CRIST&#211;BAL                      </state>
@@ -25920,7 +25920,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>321584</address>
+                        <address>AV. DUARTE No.61                             </address>
                         <city>n/a</city>
                         <country_code>DO</country_code>
                         <state>n/a</state>
@@ -26024,7 +26024,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>177293</address>
+                        <address>C/ PRINCIPAL PROF. JUAN BOSCH NO.4           </address>
                         <city>IMBERT                             </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -26128,7 +26128,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>177293</address>
+                        <address>C/ DUARTE NO.65                              </address>
                         <city>IMBERT                             </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -26232,7 +26232,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>177293</address>
+                        <address>C/ INDEPENDENCIA No.49                       </address>
                         <city>IMBERT                             </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -26336,7 +26336,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>77955</address>
+                        <address>C/ DUARTE No.279, SECTOR EL 90               </address>
                         <city>BONAO                              </city>
                         <country_code>DO</country_code>
                         <state>MONSE&#209;OR NOUEL                     </state>
@@ -26440,7 +26440,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>177293</address>
+                        <address>n/a</address>
                         <city>IMBERT                             </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -26544,7 +26544,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>569482</address>
+                        <address>C/ SAN BARTOLOME No.41                       </address>
                         <city>DUVERG&#201;                            </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -26648,7 +26648,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>569482</address>
+                        <address>n/a</address>
                         <city>DUVERG&#201;                            </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -26752,7 +26752,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>569482</address>
+                        <address>C/ DUARTE No.82                              </address>
                         <city>DUVERG&#201;                            </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -26856,7 +26856,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>300259</address>
+                        <address>C/ DUARTE No.70                              </address>
                         <city>R&#205;O SAN JUAN                       </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -26960,7 +26960,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>300259</address>
+                        <address>C/ MARIA GOMEZ ESQ. SANTIAGO HIDALGO         </address>
                         <city>R&#205;O SAN JUAN                       </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -27064,7 +27064,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>300259</address>
+                        <address>n/a</address>
                         <city>R&#205;O SAN JUAN                       </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -27168,7 +27168,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>300259</address>
+                        <address>C/ DUARTE No.70                              </address>
                         <city>R&#205;O SAN JUAN                       </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -27272,7 +27272,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>300259</address>
+                        <address>n/a</address>
                         <city>R&#205;O SAN JUAN                       </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -27376,7 +27376,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>300259</address>
+                        <address>C/ MARIA GOMEZ ESQ. SANTIAGO HIDALGO         </address>
                         <city>R&#205;O SAN JUAN                       </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -27480,7 +27480,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>654872</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>JUAN L&#211;PEZ (D. M.).                </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -27584,7 +27584,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>246700</address>
+                        <address>AV. DUARTE No.61                             </address>
                         <city>VILLA RIVAS                        </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -27688,7 +27688,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442413</address>
+                        <address>C/ PRINCIPAL PROF. JUAN BOSCH NO.4           </address>
                         <city>PUERTO PLATA                       </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -27792,7 +27792,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442413</address>
+                        <address>C/ DUARTE NO.65                              </address>
                         <city>PUERTO PLATA                       </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -27896,7 +27896,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442413</address>
+                        <address>C/ INDEPENDENCIA No.49                       </address>
                         <city>PUERTO PLATA                       </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -28000,7 +28000,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442413</address>
+                        <address>C/ SAN CRISTOBAL COLON No.64                 </address>
                         <city>PUERTO PLATA                       </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -28104,7 +28104,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>442413</address>
+                        <address>n/a</address>
                         <city>PUERTO PLATA                       </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -28208,7 +28208,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -28312,7 +28312,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -28416,7 +28416,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -28520,7 +28520,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>210221</address>
+                        <address>C/ INDEPENDENCIA ESQ. COLON                  </address>
                         <city>PIMENTEL                           </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -28624,7 +28624,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>455138</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -28728,7 +28728,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -28832,7 +28832,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -28936,7 +28936,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -29040,7 +29040,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -29144,7 +29144,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>636106</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>CAYETANO GERMOS&#201;N                  </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -29248,7 +29248,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>272315</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -29352,7 +29352,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>272315</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -29456,7 +29456,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>311003</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>CAYETANO GERMOS&#201;N                  </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -29560,7 +29560,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>575200</address>
+                        <address>C/ BENITO MONCION, ESQ. SANCHEZ NO.60        </address>
                         <city>LAGUNA SALADA                      </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -29664,7 +29664,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>575200</address>
+                        <address>C/ GUILLERMO MAURIZ No.1                     </address>
                         <city>LAGUNA SALADA                      </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -29768,7 +29768,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>575200</address>
+                        <address>C/ DUARTE No.96                              </address>
                         <city>LAGUNA SALADA                      </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -29872,7 +29872,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>7999</address>
+                        <address>C/ SAN BARTOLOME No.41                       </address>
                         <city>POSTRER R&#205;O                        </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -29976,7 +29976,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>7999</address>
+                        <address>C/ DUARTE No.82                              </address>
                         <city>POSTRER R&#205;O                        </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -30080,7 +30080,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>7999</address>
+                        <address>n/a</address>
                         <city>POSTRER R&#205;O                        </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -30184,7 +30184,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>18251</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -30288,7 +30288,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>397939</address>
+                        <address>n/a</address>
                         <city>SANTIAGO                           </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -30392,7 +30392,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>397939</address>
+                        <address>C/ DUARTE No.70                              </address>
                         <city>SANTIAGO                           </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -30496,7 +30496,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>210221</address>
+                        <address>Av. Frank Grull&#243;n, Salida hacia Nagua        </address>
                         <city>PIMENTEL                           </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -30600,7 +30600,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>397939</address>
+                        <address>C/ MARIA GOMEZ ESQ. SANTIAGO HIDALGO         </address>
                         <city>SANTIAGO                           </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -30704,7 +30704,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>182025</address>
+                        <address>C/ PRINCIPAL PROF. JUAN BOSCH NO.4           </address>
                         <city>VILLA ISABELA                      </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -30808,7 +30808,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>182025</address>
+                        <address>C/ DUARTE NO.65                              </address>
                         <city>VILLA ISABELA                      </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -30912,7 +30912,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>182025</address>
+                        <address>C/ INDEPENDENCIA No.49                       </address>
                         <city>VILLA ISABELA                      </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -31016,7 +31016,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>182025</address>
+                        <address>C/ SAN CRISTOBAL COLON No.64                 </address>
                         <city>VILLA ISABELA                      </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -31120,7 +31120,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>182025</address>
+                        <address>n/a</address>
                         <city>VILLA ISABELA                      </city>
                         <country_code>DO</country_code>
                         <state>PUERTO PLATA                       </state>
@@ -31224,7 +31224,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>13266</address>
+                        <address>C/ SAN BARTOLOME No.41                       </address>
                         <city>LA DESCUBIERTA                     </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -31328,7 +31328,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>13266</address>
+                        <address>C/ DUARTE No.82                              </address>
                         <city>LA DESCUBIERTA                     </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -31432,7 +31432,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>13266</address>
+                        <address>n/a</address>
                         <city>LA DESCUBIERTA                     </city>
                         <country_code>DO</country_code>
                         <state>INDEPENDENCIA                      </state>
@@ -31536,7 +31536,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>504725</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>LA OTRA BANDA (D. M.).             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -31640,7 +31640,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>104419</address>
+                        <address>C/ NUESTRA SRA. DE REGLA No.19 ESQ. SANCHEZ  </address>
                         <city>BAN&#205;                               </city>
                         <country_code>DO</country_code>
                         <state>PERAVIA                            </state>
@@ -31744,7 +31744,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>270354</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>RANCHO ARRIBA                      </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -31848,7 +31848,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>528038</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -31952,7 +31952,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>528038</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -32056,7 +32056,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>528038</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -32160,7 +32160,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>391009</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -32264,7 +32264,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>391009</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -32368,7 +32368,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255199</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -32472,7 +32472,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255199</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -32576,7 +32576,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255199</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -32680,7 +32680,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>270354</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>RANCHO ARRIBA                      </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -32784,7 +32784,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>521843</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -32888,7 +32888,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>30090</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -32993,7 +32993,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>12297</address>
+                        <address>C/ SANCHEZ No.67                             </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -33098,7 +33098,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>12297</address>
+                        <address>C/ INDEPENDENCIA EDIF, No.115                </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -33203,7 +33203,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>12297</address>
+                        <address>C/ MIGUEL ANT. MORILLO No.73                 </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -33307,7 +33307,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>99014</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>JAMAO AL NORTE                     </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -33411,7 +33411,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>501179</address>
+                        <address>C/ 16 DE AGOSTO No.18, CENTRO DEL PUEBLO     </address>
                         <city>SAN JOS&#201; DE LAS MATAS              </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -33515,7 +33515,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>501179</address>
+                        <address>AV. SANTIAGOP No.14                          </address>
                         <city>SAN JOS&#201; DE LAS MATAS              </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO                           </state>
@@ -33619,7 +33619,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>213292</address>
+                        <address>C/ SANCHEZ No.67                             </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -33723,7 +33723,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>213292</address>
+                        <address>C/ INDEPENDENCIA EDIF, No.115                </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -33827,7 +33827,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>213292</address>
+                        <address>C/ MIGUEL ANT. MORILLO No.73                 </address>
                         <city>SAN JUAN                           </city>
                         <country_code>DO</country_code>
                         <state>SAN JUAN                           </state>
@@ -33931,7 +33931,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>309586</address>
+                        <address>C/ PADRE FANTINO NO.5                        </address>
                         <city>CEVICOS                            </city>
                         <country_code>DO</country_code>
                         <state>S&#193;NCHEZ RAM&#205;REZ                    </state>
@@ -34035,7 +34035,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>56622</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>LA VEGA                            </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -34139,7 +34139,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>57774</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -34243,7 +34243,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>57774</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SABANA LARGA                       </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -34347,7 +34347,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>540711</address>
+                        <address>CARR. MOCA LA VEGA, AL LADO DEL HOSPITAL     </address>
                         <city>MOCA                               </city>
                         <country_code>DO</country_code>
                         <state>ESPAILLAT                          </state>
@@ -34451,7 +34451,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>287207</address>
+                        <address>C/ GENERAL MATIAS MORENO ESQ. ALTAGRACIA No.7</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -34555,7 +34555,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>287207</address>
+                        <address>n/a</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -34659,7 +34659,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>287207</address>
+                        <address>n/a</address>
                         <city>MONTE PLATA                        </city>
                         <country_code>DO</country_code>
                         <state>MONTE PLATA                        </state>
@@ -34763,7 +34763,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -34867,7 +34867,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -34971,7 +34971,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>30090</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -35075,7 +35075,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>309586</address>
+                        <address>C/ PADRE FANTINO NO.5                        </address>
                         <city>CEVICOS                            </city>
                         <country_code>DO</country_code>
                         <state>S&#193;NCHEZ RAM&#205;REZ                    </state>
@@ -35179,7 +35179,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>571645</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -35283,7 +35283,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>571645</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -35387,7 +35387,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>476765</address>
+                        <address>C/ NUESTRA SRA. DE REGLA No.19 ESQ. SANCHEZ  </address>
                         <city>BAN&#205;                               </city>
                         <country_code>DO</country_code>
                         <state>PERAVIA                            </state>
@@ -35491,7 +35491,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>530423</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -35595,7 +35595,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>530423</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -35699,7 +35699,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>530423</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -35803,7 +35803,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>488733</address>
+                        <address>AV. LUIS E. DEL MONTE No.59, CENTRO DE LA CIU</address>
                         <city>ENRIQUILLO                         </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -35907,7 +35907,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>488733</address>
+                        <address>C/ HERMANAS MIRABAL No.34                    </address>
                         <city>ENRIQUILLO                         </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -36011,7 +36011,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>488733</address>
+                        <address>C/ LIBERTAD                                  </address>
                         <city>ENRIQUILLO                         </city>
                         <country_code>DO</country_code>
                         <state>BARAHONA                           </state>
@@ -36115,7 +36115,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>375823</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -36219,7 +36219,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>375823</address>
+                        <address>n/a</address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -36323,7 +36323,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>571645</address>
+                        <address>C/ MELCHOR CONTIN ALPHAU No.39, MILLON       </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -36427,7 +36427,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>375823</address>
+                        <address>n/a</address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -36531,7 +36531,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>524409</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -36635,7 +36635,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>273629</address>
+                        <address>C/ DUARTE, ESQ. HERMANAS MIRABAL             </address>
                         <city>SALCEDO                            </city>
                         <country_code>DO</country_code>
                         <state>HERMANAS MIRABAL                   </state>
@@ -36739,7 +36739,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>384416</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>LAS LAGUNAS DE NISIB&#211;N (D. M.).    </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -36843,7 +36843,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>450012</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -36947,7 +36947,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>450012</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SANTO DOMINGO OESTE                </city>
                         <country_code>DO</country_code>
                         <state>SANTO DOMINGO                      </state>
@@ -37051,7 +37051,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>524409</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -37155,7 +37155,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>261677</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -37259,7 +37259,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>261677</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -37363,7 +37363,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>448125</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>LA OTRA BANDA (D. M.).             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -37467,7 +37467,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255199</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -37571,7 +37571,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>486718</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>LA VEGA                            </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -37675,7 +37675,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255199</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -37779,7 +37779,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255199</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -37883,7 +37883,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>486718</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>LA VEGA                            </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -37987,7 +37987,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>66794</address>
+                        <address>AV. DUARTE No.61                             </address>
                         <city>CRISTO REY DE GUARAGUAO (D. M.).   </city>
                         <country_code>DO</country_code>
                         <state>DUARTE                             </state>
@@ -38091,7 +38091,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>126291</address>
+                        <address>C/ PADRE FANTINO NO.5                        </address>
                         <city>COTU&#205;                              </city>
                         <country_code>DO</country_code>
                         <state>S&#193;NCHEZ RAM&#205;REZ                    </state>
@@ -38195,7 +38195,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>336008</address>
+                        <address>C/ SANTA BARBARA, EDIF. OFICINAS PUBLICAS    </address>
                         <city>S&#193;NCHEZ                            </city>
                         <country_code>DO</country_code>
                         <state>SAMAN&#193;                             </state>
@@ -38299,7 +38299,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255508</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -38403,7 +38403,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>336008</address>
+                        <address>C/ SANCHEZ EDIF. No.50                       </address>
                         <city>S&#193;NCHEZ                            </city>
                         <country_code>DO</country_code>
                         <state>SAMAN&#193;                             </state>
@@ -38507,7 +38507,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>538839</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>LA OTRA BANDA (D. M.).             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -38611,7 +38611,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>402408</address>
+                        <address>AV. ANTONIO ABUD ISSAC                       </address>
                         <city>TIREO (D. M.).                     </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -38715,7 +38715,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>389757</address>
+                        <address>C/ SANTA BARBARA, EDIF. OFICINAS PUBLICAS    </address>
                         <city>LAS TERRENAS                       </city>
                         <country_code>DO</country_code>
                         <state>SAMAN&#193;                             </state>
@@ -38819,7 +38819,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>389757</address>
+                        <address>C/ SANCHEZ EDIF. No.50                       </address>
                         <city>LAS TERRENAS                       </city>
                         <country_code>DO</country_code>
                         <state>SAMAN&#193;                             </state>
@@ -38923,7 +38923,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -39027,7 +39027,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>n/a</address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -39131,7 +39131,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>AV. CHARLES DE GAULLE, PALACIO DE JUSTICIA   </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -39235,7 +39235,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -39339,7 +39339,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -39443,7 +39443,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>C/ SANTA BARBARA, EDIF. OFICINAS PUBLICAS    </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -39547,7 +39547,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>387944</address>
+                        <address>C/ SANCHEZ EDIF. No.50                       </address>
                         <city>NUEVO DISTRITO NACIONAL            </city>
                         <country_code>DO</country_code>
                         <state>DISTRITO NACIONAL                  </state>
@@ -39651,7 +39651,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255508</address>
+                        <address>C/ MANUELA DIEZ JIMENEZ No.10                </address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -39755,7 +39755,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>255508</address>
+                        <address>n/a</address>
                         <city>EL SEIBO                           </city>
                         <country_code>DO</country_code>
                         <state>EL SEIBO                           </state>
@@ -39859,7 +39859,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>17184</address>
+                        <address>C/ Dr. Dar&#237;o G&#243;mez No. 64                    </address>
                         <city>SAN IGNACIO DE SABANETA            </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO RODR&#205;GUEZ                 </state>
@@ -39963,7 +39963,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>17184</address>
+                        <address>ANDRES MEDINA No.109                         </address>
                         <city>SAN IGNACIO DE SABANETA            </city>
                         <country_code>DO</country_code>
                         <state>SANTIAGO RODR&#205;GUEZ                 </state>
@@ -40067,7 +40067,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>550386</address>
+                        <address>C/ ALTAGRACIA ESQ. LAS CARRERAS              </address>
                         <city>HIG&#220;EY                             </city>
                         <country_code>DO</country_code>
                         <state>LA ALTAGRACIA                      </state>
@@ -40171,7 +40171,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -40275,7 +40275,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -40379,7 +40379,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>350306</address>
+                        <address>C/ NUESTRA SRA. DE REGLA No.19 ESQ. SANCHEZ  </address>
                         <city>BAN&#205;                               </city>
                         <country_code>DO</country_code>
                         <state>PERAVIA                            </state>
@@ -40483,7 +40483,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>507350</address>
+                        <address>C/ 27 DE FEBRERO, ESQ. MERCEDES BELLO NO.24  </address>
                         <city>EL FACTOR                          </city>
                         <country_code>DO</country_code>
                         <state>MAR&#205;A TRINIDAD S&#193;NCHEZ             </state>
@@ -40587,7 +40587,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>AV. BENITO MONCION                           </address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -40691,7 +40691,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>198291</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -40795,7 +40795,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>463704</address>
+                        <address>n/a</address>
                         <city>ESPERANZA                          </city>
                         <country_code>DO</country_code>
                         <state>VALVERDE                           </state>
@@ -40899,7 +40899,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -41003,7 +41003,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>454583</address>
+                        <address>C/ MARIO NELSON GALAN                        </address>
                         <city>RINC&#211;N (D. M.).                    </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>
@@ -41107,7 +41107,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>161598</address>
+                        <address>C/ DUARTE ESQ. ALTAGRACIA No.40              </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -41211,7 +41211,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>161598</address>
+                        <address>C/ PRINCIPAL, SECTOR ARROLLO CA&#209;A            </address>
                         <city>SAN JOS&#201; DE OCOA                   </city>
                         <country_code>DO</country_code>
                         <state>SAN JOS&#201; DE OCOA                   </state>
@@ -41315,7 +41315,7 @@
                   <addresses>
                      <address>
                         <address_type>1</address_type>
-                        <address>198291</address>
+                        <address>Profesor Juan Bosch, Esq. Comandante Jim&#233;nez </address>
                         <city>JARABACOA                          </city>
                         <country_code>DO</country_code>
                         <state>LA VEGA                            </state>

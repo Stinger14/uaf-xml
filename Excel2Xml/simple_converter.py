@@ -13,6 +13,8 @@ from resources import get_resources_path
 from yattag import Doc, indent
 from datetime import datetime
 from xml.etree.ElementTree import parse, ParseError
+import timeit
+import time
 
 SUCURSALES = {
     "0": 'Principal',
@@ -21,8 +23,8 @@ SUCURSALES = {
     "3": 'San Cristóbal',
     "4": 'Barahona',
     "5": 'San Juan',
-    "6": 'Principal',
-    "7": 'Principal',
+    "6": 'San Francisco de Macorís',
+    "7": 'Comendador',
     "8": 'Azua',
     "9": 'La Vega',
     "10": 'Santiago Rodriguez',
@@ -52,8 +54,32 @@ SUCURSALES = {
 
 # RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
-k = []
-ele = []
+
+class Converter:
+    """This class converts an RTE module excel file to a valid
+        XML file to meet goAML platform requirements.
+    """
+    # start = timeit.default_timer()
+    start = time.time()
+
+    def __init__(self):
+        self.k = []
+        self.ele = []
+        self.wb = None
+
+    def run(self):
+        self.wb = sys.argv[1] if len(sys.argv) > 1 else sg.popup_get_file('Seleccionar archivo')
+        if not self.wb:
+            sg.popup("Cancelando", "No se seleccionó ningún archivo.")
+            raise SystemExit("Cancelado.")
+        else:
+            gen_xml(self.wb)
+            sg.popup("Archivo XML generado exitosamente.", self.wb)
+
+    # stop = timeit.default_timer()
+    time.sleep(1)
+    stop = time.time()
+    print(f"Program execution time: {stop - start}")
 
 
 def gen_xml(workbook):
@@ -403,7 +429,7 @@ def gen_xml(workbook):
                                             with tag("address_type"):
                                                 text(int("1"))
                                             with tag("address"):
-                                                if row[25] is None or row[25] == '':
+                                                if row[79] is None or row[79] == '':
                                                     text("n/a")
                                                 else:
                                                     text(row[79])
@@ -475,12 +501,6 @@ def gen_xml(workbook):
         print('>>Exception<<: File not well-formed')
 
 
-# ? Esta variable guarda el archivo seleccionado.
-fname = sys.argv[1] if len(sys.argv) > 1 else sg.popup_get_file('Seleccionar archivo')
-
-if not fname:
-    sg.popup("Cancel", "No se seleccionó ningún archivo")
-    raise SystemExit("Cancelado")
-else:
-    gen_xml(fname)
-    sg.popup('Archivo XML generado exitosamente', fname)
+if __name__ == '__main__':
+    app = Converter()
+    app.run()

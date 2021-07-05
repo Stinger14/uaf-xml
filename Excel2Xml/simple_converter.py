@@ -95,9 +95,9 @@ DIRECCIONES = {
 
 class Converter:
     """This class converts an RTE module excel file to a valid
-        XML file to meet goAML platform requirements.
+        XML to meet goAML platform requirements.
     """
-    # start = timeit.default_timer()
+    # time program execution
     start = time.time()
 
     def __init__(self):
@@ -114,7 +114,6 @@ class Converter:
             gen_xml(self.wb)
             sg.popup("Archivo XML generado exitosamente.", self.wb)
 
-    # stop = timeit.default_timer()
     time.sleep(1)
     stop = time.time()
     print(f"Program execution time: {stop - start}")
@@ -135,12 +134,12 @@ def gen_xml(workbook):
     xml_header = '<?xml version="1.0" encoding="iso-8859-3"?>'
     # xml_schema = '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"></xs:schema>'
 
-    # ? Se agrega el header al documento.
+    # ? Agrega el header al documento.
     doc.asis(xml_header)
 
     # ? Se crean los elementos o nodos.
-    # ? El nodo report(root) se debe generar con los atributos especificados para
-    # ? que el reporte siga las reglas definidas en el esquema de la UAF.
+    # ? El nodo report(root) se debe generar con el esquema especificado para
+    # ? que el reporte siga las reglas definidas en la plataforma goAML.
     with tag('report', ('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance"),
              ('xsi:noNamespaceSchemaLocation', "goAMLSchema.xsd")):
         # ? Se recorre solo la primera fila para crear el esqueleto
@@ -157,12 +156,12 @@ def gen_xml(workbook):
                 if row[36] == "EFECTIVO" or row[36] == "CHEQUE":
                     text("E")
                 else:
-                    text("E")
+                    text("E")  # Si existe otro método cambiar letra según documento.
             with tag('report_code'):
                 text("CTR")
             with tag('submission_date'):
                 tmp = datetime.strptime(str(row[4]), "%Y-%m-%d %H:%M:%S")
-                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))     # Formato válido "%Y-%m-%dT%H:%M:%S"
             with tag("currency_code_local"):
                 text("DOP")
             with tag("reporting_person"):
@@ -181,7 +180,6 @@ def gen_xml(workbook):
                     text("00109551382")
                 with tag("nationality1"):
                     text("DO")
-
                 with tag("phones"):
                     with tag("phone"):
                         with tag("tph_contact_type"):
@@ -232,21 +230,19 @@ def gen_xml(workbook):
                     text(row[74])
 
         # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
-        # ? y se añade un nodo transacción por fila del RTE
+        # ? y se añade un nodo transacción por fila del RTE(Archivo Excel)
         for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column)):
             row = [cell.value for cell in row if row is not None]
             # ? Si tiene número de reporte entonces la fila es válida
             if row[0]:
                 with tag("transaction"):
-                    with tag("transactionnumber"):  # ! CHECK col in excel file
+                    with tag("transactionnumber"):
                         text(row[77])
                     with tag("transaction_location"):
                         if row[79] is None or row[79] == '':
                             suc = SUCURSALES.get(str(row[3])).upper()
                             text(DIRECCIONES.get(suc))
-                            # text(row[79])
                         else:
-                            # text(SUCURSALES.get(str(row[3])))
                             text(row[79])
                     with tag("transaction_description"):
                         if row[41] is None:
@@ -277,7 +273,6 @@ def gen_xml(workbook):
                             text(row[34])
                         else:
                             text(row[34])
-
                     with tag("t_from_my_client"):
                         with tag("from_funds_code"):
                             text("K")
@@ -508,7 +503,11 @@ def gen_xml(workbook):
                                 tmp = datetime.strptime(str(row[37]), "%Y-%m-%d %H:%M:%S")
                                 text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
                             with tag("balance"):  # FIXME: Balance luego de realizar trx
-                                text("1000000")
+                                if row[34] is None or row[34] == '':
+                                    row[34] = 0.0
+                                    text(row[34])
+                                else:
+                                    text(row[34])
                             with tag("status_code"):  # FIXME: Fetch estado cta al inicio de trx
                                 text("A")
                             with tag("beneficiary"):  # FIXME: Beneficiaro final

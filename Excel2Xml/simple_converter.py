@@ -161,7 +161,7 @@ def gen_xml(workbook):
                 text("CTR")
             with tag('submission_date'):
                 tmp = datetime.strptime(str(row[4]), "%Y-%m-%d %H:%M:%S")
-                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))     # Formato válido "%Y-%m-%dT%H:%M:%S"
+                text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))  # Formato válido "%Y-%m-%dT%H:%M:%S"
             with tag("currency_code_local"):
                 text("DOP")
             with tag("reporting_person"):
@@ -229,6 +229,8 @@ def gen_xml(workbook):
                 else:
                     text(row[74])
 
+        # -------------------------------- TRANSACCION ---------------------------------#
+
         # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
         # ? y se añade un nodo transacción por fila del RTE(Archivo Excel)
         for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column)):
@@ -256,9 +258,9 @@ def gen_xml(workbook):
                         tmp = datetime.strptime(str(row[37]), "%Y-%m-%d %H:%M:%S")
                         text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
                     with tag("teller"):
-                        text("SANTO DOMINGO")
+                        text(SUCURSALES.get(str(row[3])).upper())
                     with tag("authorized"):
-                        text("SANTO DOMINGO")
+                        text(SUCURSALES.get(str(row[3])).upper())
                     with tag("transmode_code"):
                         text("6")
                     with tag("transmode_comment"):
@@ -276,9 +278,12 @@ def gen_xml(workbook):
                     with tag("t_from_my_client"):
                         with tag("from_funds_code"):
                             text("K")
+
                         with tag("from_person"):
                             with tag("gender"):
-                                if row[9] is None or row[9] == '':
+                                if row[48] == 'SI':
+                                    pass
+                                elif row[9] is None or row[9] == '':
                                     row[9] = "M"
                                     text(row[9])
                                 else:
@@ -408,14 +413,14 @@ def gen_xml(workbook):
                                         else:
                                             text(row[9])
                                     with tag("first_name"):
-                                        text(row[10])
+                                        text(row[10])           # FIXME: row[50]
                                     with tag("middle_name"):
-                                        if len(row[10].split(' ')) > 1:
+                                        if len(row[10].split(' ')) > 1:         # FIXME: row[50]
                                             text(row[10].split(' ')[1])
                                         else:
                                             text(row[10])
                                     with tag("last_name"):
-                                        if row[11] is None or row[11] == '':
+                                        if row[11] is None or row[11] == '':        # FIXME: row[51]
                                             row[11] = "."
                                             text(row[11])
                                         else:

@@ -129,6 +129,7 @@ def is_entity(name):
         else:
             next
 
+
 def gen_xml(workbook):
     """
     :param workbook: str - Archivo Excel a convertir.
@@ -197,7 +198,7 @@ def gen_xml(workbook):
                         with tag("tph_communication_type"):
                             text("L")
                         with tag("tph_country_prefix"):
-                            text("809")
+                            text("1")
                         with tag("tph_number"):
                             text("8095358088")
                         with tag("tph_extension"):
@@ -252,11 +253,8 @@ def gen_xml(workbook):
                     with tag("transactionnumber"):
                         text(row[77])
                     with tag("transaction_location"):
-                        if row[79] is None or row[79] == '':
-                            suc = SUCURSALES.get(str(row[3])).upper()
-                            text(DIRECCIONES.get(suc))
-                        else:
-                            text(row[79])
+                        suc = SUCURSALES.get(str(row[3])).upper()
+                        text(suc)
                     with tag("transaction_description"):
                         if row[41] is None:
                             row[41] = ""
@@ -296,87 +294,83 @@ def gen_xml(workbook):
                         with tag("t_from_my_client"):
                             with tag("from_funds_code"):
                                 text("K")
-                            with tag("t_conductor"):
-                                with tag("gender"):
-                                    if row[82] is None:
-                                        row[82] = "M"
-                                        text(row[82])
-                                    else:
-                                        text(row[82])
-                                with tag("title"):
-                                    if row[82] == "M":
-                                        text("Sr.")
-                                    elif row[82] == "F":
-                                        text("Sra.")
-                                    else:
-                                        text("n/a")
-                                with tag("first_name"):
-                                    if row[80] is None or row[80] == '':
-                                        row[80] = "n/a"
-                                        text(row[80])
-                                    elif is_entity(row[80]):
-                                        row[80] = "n/a"
-                                        text(row[80])
-                                    else:
-                                        text(' '.join(row[80].split()[:5]))
-                                with tag("last_name"):
-                                    if row[81] is None or row[81] == '' or row[81] == '.':
-                                        row[81] = "n/a"
-                                        text(row[81])
-                                    elif is_entity(row[81]):    # match w/ row[80] not row[81]
-                                        row[81] = "n/a"
-                                        text(row[81])
-                                    else:
-                                        text(' '.join(row[81].split()[:5]))
-                                with tag("birthdate"):
-                                    if row[83] is None:
-                                        row[83] = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
-                                    tmp = datetime.strptime(str(row[83]), "%Y-%m-%d %H:%M:%S")
-                                    text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
-                                with tag("id_number"):
-                                    if row[84] is None:
-                                        row[84] = "n/a"
-                                        text(row[84])
-                                    else:
-                                        text(''.join(row[84].split('-')).strip())
-                                with tag("nationality1"):
-                                    text("DO")
-                                with tag("residence"):
-                                    text("DO")
-                                with tag("phones"):
-                                    with tag("phone"):
-                                        with tag("tph_contact_type"):
-                                            text(2)
-                                        with tag("tph_communication_type"):
-                                            text("L")
-                                        with tag("tph_country_prefix"):
-                                            if row[85] is None:
-                                                row[85] = "n/a"
-                                                text(row[85])
-                                            else:
-                                                text(row[85].split('-')[0].strip())
-
-                                        with tag("tph_number"):
-                                            if row[85] is None:
-                                                row[85] = "n/a"
-                                                text(row[85])
-                                            else:
-                                                text(''.join(row[85].split('-')))
-                                with tag("occupation"):
-                                    if row[87] is None or row[87] == '':
-                                        text("n/a")
-                                    else:
-                                        text(row[87])
-                                with tag("identification"):
-                                    with tag("type"):
-                                        text(1)
-                                    with tag("number"):
-                                        if row[84] is None or row[84] == '':
-                                            text("")
+                            if row[48].lower() == 'no':
+                                with tag("t_conductor"):
+                                    with tag("gender"):
+                                        if row[82] is None:
+                                            row[82] = "M"
+                                            text(row[82])
+                                        else:
+                                            text(row[82])
+                                    with tag("title"):
+                                        if row[82] == "M":
+                                            text("Sr.")
+                                        elif row[82] == "F":
+                                            text("Sra.")
+                                        else:
+                                            text("n/a")
+                                    with tag("first_name"):
+                                        if row[80] is None or row[80] == '':
+                                            row[80] = "n/a"
+                                            text(row[80])
+                                        else:
+                                            text(' '.join(row[80].split()[:5]))
+                                    with tag("last_name"):
+                                        if row[81] is None or row[81] == '' or row[81] == '.':
+                                            row[81] = "n/a"
+                                            text(row[81])
+                                        else:
+                                            text(' '.join(row[81].split()[:5]))
+                                    with tag("birthdate"):
+                                        if row[83] is None:
+                                            row[83] = datetime.strptime("1900-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                        tmp = datetime.strptime(str(row[83]), "%Y-%m-%d %H:%M:%S")
+                                        text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
+                                    with tag("id_number"):
+                                        if row[84] is None:
+                                            row[84] = "n/a"
+                                            text(row[84])
                                         else:
                                             text(''.join(row[84].split('-')).strip())
-                                    with tag("issue_country"):
+                                    with tag("nationality1"):
                                         text("DO")
+                                    with tag("residence"):
+                                        text("DO")
+                                    with tag("phones"):
+                                        with tag("phone"):
+                                            with tag("tph_contact_type"):
+                                                text(2)
+                                            with tag("tph_communication_type"):
+                                                text("L")
+                                            with tag("tph_country_prefix"):
+                                                if row[85] is None:
+                                                    row[85] = "n/a"
+                                                    text(row[85])
+                                                else:
+                                                    text(row[85].split('-')[0].strip())
+
+                                            with tag("tph_number"):
+                                                if row[85] is None:
+                                                    row[85] = "n/a"
+                                                    text(row[85])
+                                                else:
+                                                    text(''.join(row[85].split('-')))
+                                    with tag("occupation"):
+                                        if row[88] is None or row[87] == '':
+                                            text("n/a")
+                                        else:
+                                            text(row[88])
+                                    with tag("identification"):
+                                        with tag("type"):
+                                            text(1)
+                                        with tag("number"):
+                                            if row[84] is None or row[84] == '':
+                                                text("")
+                                            else:
+                                                text(''.join(row[84].split('-')).strip())
+                                        with tag("issue_country"):
+                                            text("DO")
+
                             with tag("from_entity"):
                                 with tag("name"):
                                     if row[10] is None:
@@ -384,13 +378,17 @@ def gen_xml(workbook):
                                         text(row[10])
                                     else:
                                         text(row[10].strip())
+                                with tag("commercial_name"):
+                                    text(row[11])
                                 with tag("incorporation_legal_form"):
                                     text("C")
                                 with tag("incorporation_number"):
                                     if row[15] is None or row[15] == '':
                                         text("n/a")
                                     else:
-                                        text(''.join(row[15].split('-')).strip())
+                                        text(row[15])
+                                with tag("business"):
+                                    text(row[17])
 
                                 # with tag("t_entity"):
                                 #     with tag("name"):
@@ -416,15 +414,12 @@ def gen_xml(workbook):
                                         with tag("tph_communication_type"):
                                             text("M")
                                         with tag("tph_country_prefix"):
-                                            if row[84] is None:
-                                                text("n/a")
-                                            else:
-                                                text(''.join(row[84][:3].split('-')))
+                                            text("1")
                                         with tag("tph_number"):
                                             if row[84] is None:
                                                 text("n/a")
                                             else:
-                                                text(''.join(row[84][4:12].split('-')).strip())
+                                                text(''.join(row[84].split('-')).strip())
                                 with tag("addresses"):
                                     with tag("address"):
                                         with tag("address_type"):
@@ -446,8 +441,7 @@ def gen_xml(workbook):
                                                 text("n/a")
                                             else:
                                                 text(row[22].strip())
-                                # with tag("incorporation_country_code"):
-                                #     text("DO")
+
                             with tag("from_country"):
                                 text("DO")
                     # ? SI EL BENEFICIARIO ES UNA PERSONA
@@ -471,11 +465,11 @@ def gen_xml(workbook):
                                         text("n/a")
                                 with tag("first_name"):
                                     text(row[10])
-                                with tag("middle_name"):
-                                    if len(row[10].split(' ')) > 1:
-                                        text(row[10].split(' ')[1])
-                                    else:
-                                        text(row[10])
+                                # with tag("middle_name"):
+                                #     if len(row[10].split(' ')) > 1:
+                                #         text(row[10].split(' ')[1])
+                                #     else:
+                                #         text("")
                                 with tag("last_name"):
                                     if row[11] is None or row[11] == '':
                                         row[11] = "."
@@ -503,20 +497,20 @@ def gen_xml(workbook):
                                             if row[27] is None and row[28] is None and row[26] is None:
                                                 text("n/a")
                                             elif row[27]:
-                                                text(''.join(row[27][:3].split('-')))
+                                                text("1")
                                             elif row[28]:
-                                                text(''.join(row[28][:3].split('-')))
+                                                text("1")
                                             elif row[26]:
-                                                text(''.join(row[26][:3].split('-')))
+                                                text("1")
                                         with tag("tph_number"):
                                             if row[27] is None and row[28] is None and row[26] is None:
                                                 text("n/a")
                                             elif row[27]:
-                                                text(''.join(row[27][4:12].split('-')))
+                                                text(''.join(row[27].split('-')))
                                             elif row[26]:
-                                                text(''.join(row[26][4:12].split('-')))
+                                                text(''.join(row[26].split('-')))
                                             elif row[28]:
-                                                text(''.join(row[28][4:12].split('-')))
+                                                text(''.join(row[28].split('-')))
                                 with tag("addresses"):
                                     with tag("address"):
                                         with tag("address_type"):
@@ -545,10 +539,10 @@ def gen_xml(workbook):
                                         text(row[17])
                                 with tag("identification"):
                                     with tag("type"):
-                                        text("1")
+                                        text(1)
                                     with tag("number"):
                                         if row[15] is None or row[15] == '':
-                                            text("n/a")
+                                            text("")
                                         else:
                                             text(''.join(row[15].split('-')).strip())
                                     with tag("issue_country"):
@@ -577,8 +571,66 @@ def gen_xml(workbook):
                                 text(row[78])
                             with tag("personal_account_type"):
                                 text("C")
+                            if row[6] == "JURIDICA":
+                                with tag("t_entity"):
+                                    with tag("name"):
+                                        text(row[10])
+                                    with tag("commercial_name"):
+                                        text(row[11])
+                                    with tag("incorporation_number"):
+                                        text(row[1])
+                                    # with tag("incorporation_legal_form"):
+                                    #     text("C")
+                                    with tag("business"):
+                                        text(row[17])
+                                    with tag("phones"):
+                                        with tag("phone"):
+                                            with tag("tph_contact_type"):
+                                                text(4)
+                                            with tag("tph_communication_type"):
+                                                text("M")
+                                            with tag("tph_country_prefix"):
+                                                if row[84] is None:
+                                                    text("n/a")
+                                                else:
+                                                    text("1")
+                                            with tag("tph_number"):
+                                                if row[84] is None:
+                                                    text("n/a")
+                                                else:
+                                                    text(''.join(row[84].split('-')).strip())
+                                    with tag("addresses"):
+                                        with tag("address"):
+                                            with tag("address_type"):
+                                                text(int("4"))
+                                            with tag("address"):
+                                                if row[79] is None or row[79] == '':
+                                                    text("n/a")
+                                                else:
+                                                    text(row[79].strip())
+                                            with tag("city"):
+                                                if row[23] is None or row[23] == '':
+                                                    text("n/a")
+                                                else:
+                                                    text(row[23].strip())
+                                            with tag("country_code"):
+                                                text("DO")
+                                            with tag("state"):
+                                                if row[22] is None or row[22] == '':
+                                                    text("n/a")
+                                                else:
+                                                    text(row[22].strip())
+                                    with tag("incorporation_country_code"):
+                                        text("DO")
+                                    with tag("incorporation_date"):
+                                        if row[83] is None:
+                                            row[83] = datetime.strptime("1945-08-29 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                        tmp = datetime.strptime(str(row[83]), "%Y-%m-%d %H:%M:%S")
+                                        text(tmp.strftime("%Y-%m-%dT%H:%M:%S"))
                             #? Datos del representante
                             with tag("signatory"):
+                                with tag("is_primary"):
+                                    text("true")
                                 with tag("t_person"):
                                     if row[6] == 'JURIDICA':
                                         with tag("gender"):
@@ -634,7 +686,7 @@ def gen_xml(workbook):
                                                         if row[85] is None:
                                                             text("n/a")
                                                         else:
-                                                            text(''.join(row[85][:3].split('-')))
+                                                            text("1")
                                                     with tag("tph_number"):
                                                         if row[85] is None:
                                                             text("n/a")
@@ -650,35 +702,21 @@ def gen_xml(workbook):
                                                         if row[27] is None and row[28] is None and row[26] is None:
                                                             text("n/a")
                                                         elif row[27]:
-                                                            text(''.join(row[27][:3].split('-')))
+                                                            text("1")
                                                         elif row[28]:
-                                                            text(''.join(row[28][:3].split('-')))
+                                                            text("1")
                                                         elif row[26]:
-                                                            text(''.join(row[26][:3].split('-')))
+                                                            text("1")
                                                     with tag("tph_number"):
                                                         if row[27] is None and row[28] is None and row[26] is None:
                                                             text("n/a")
                                                         elif row[27]:
-                                                            text(''.join(row[27][4:12].split('-')))
+                                                            text(''.join(row[27].split('-')))
                                                         elif row[26]:
-                                                            text(''.join(row[26][4:12].split('-')))
+                                                            text(''.join(row[26].split('-')))
                                                         elif row[28]:
-                                                            text(''.join(row[28][4:12].split('-')))
-                                        with tag("occupation"):
-                                            if row[17] is None or row[17] == '':
-                                                text("n/a")
-                                            else:
-                                                text(row[17])
-                                        with tag("identification"):
-                                            with tag("type"):
-                                                text("1")
-                                            with tag("number"):
-                                                if row[84] is None or row[84] == '':
-                                                    text("n/a")
-                                                else:
-                                                    text(''.join(row[84].split('-')).strip())
-                                            with tag("issue_country"):
-                                                text("DO")
+                                                            text(''.join(row[28].split('-')))
+
                                     else:
                                         with tag("gender"):
                                             if row[9] is None or row[9] == '':
@@ -730,20 +768,20 @@ def gen_xml(workbook):
                                                     if row[27] is None and row[28] is None and row[26] is None:
                                                         text("n/a")
                                                     elif row[27]:
-                                                        text(''.join(row[27][:3].split('-')))
+                                                        text("1")
                                                     elif row[28]:
-                                                        text(''.join(row[28][:3].split('-')))
+                                                        text("1")
                                                     elif row[26]:
-                                                        text(''.join(row[26][:3].split('-')))
+                                                        text("1")
                                                 with tag("tph_number"):
                                                     if row[27] is None and row[28] is None and row[26] is None:
                                                         text("n/a")
                                                     elif row[27]:
-                                                        text(''.join(row[27][4:12].split('-')))
+                                                        text(''.join(row[27].split('-')))
                                                     elif row[26]:
-                                                        text(''.join(row[26][4:12].split('-')))
+                                                        text(''.join(row[26].split('-')))
                                                     elif row[28]:
-                                                        text(''.join(row[28][4:12].split('-')))
+                                                        text(''.join(row[28].split('-')))
                                         with tag("occupation"):
                                             if row[17] is None or row[17] == '':
                                                 text("n/a")
@@ -754,7 +792,7 @@ def gen_xml(workbook):
                                                 text("1")
                                             with tag("number"):
                                                 if row[84] is None or row[84] == '':
-                                                    text("n/a")
+                                                    text("")
                                                 else:
                                                     text(''.join(row[84].split('-')).strip())
                                             with tag("issue_country"):
@@ -775,7 +813,8 @@ def gen_xml(workbook):
                             with tag("status_code"):
                                 text("A")
                             with tag("beneficiary"):
-                                text(' '.join(row[10].split()[:5]))
+                                text(' '.join(row[11]))
+
                         with tag("to_country"):
                             text("DO")
 

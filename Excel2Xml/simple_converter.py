@@ -13,6 +13,7 @@ from yattag import Doc, indent
 from datetime import datetime
 from xml.etree.ElementTree import parse, ParseError
 import time
+import timeit
 import pandas as pd
 
 from resources import get_resources_path
@@ -89,13 +90,6 @@ DIRECCIONES = {
     "LA VEGA": "PROFESOR JUAN BOSCH, ESQ. COMANDANTE JIMÉNEZ",
 }
 
-CORP_WORD = ['ministerio', 'procuraduria', 'cooperativa', 's.r.l.', 'srl', 'asociacion',
-             's.a', 'agropecuaria', 'industria', 'procesadora', 'ma', 'coopesur', 'proc.',
-             'agro', 'agrospt', 'copagro', 'coop.', 'granja', 'apaby', 'agrodosa']
-
-CONTACTS = {}
-
-
 # RTEMAP = get_resources_path("data/mapped_elements.xlsx")
 
 
@@ -103,8 +97,8 @@ class Converter:
     """This class converts an RTE module excel file to a valid
         XML to meet goAML platform requirements.
     """
-    # time program execution
-    start = time.time()
+    # DEBUG time program execution
+    # start = time.time()
 
     def __init__(self):
         self.k = []
@@ -120,17 +114,9 @@ class Converter:
             gen_xml(self.wb)
             sg.popup("Archivo XML generado exitosamente.", self.wb)
 
-    time.sleep(1)
-    stop = time.time()
-    print(f"Program execution time: {stop - start}")
-
-
-# def set_contact(key, con):
-#     df = pd.read_excel('representantes_de_entidades.xlsx', sheet_name='Entidades')
-#     if key not in CONTACTS.keys():
-#         df['CONTACT'] = con
-#     else:
-#         pass
+    # time.sleep(1)
+    # stop = time.time()
+    # print(f"Program execution with time module: {stop - start}")
 
 
 def get_contact(key):
@@ -141,14 +127,6 @@ def get_contact(key):
     for ind, reg in table.iterrows():
         if reg['RNC'].strip() == key.strip():
             return reg[['CONTACTO', 'APELLIDO', 'IDENTIFICACION', 'SEXO', 'FECHA NACIMIENTO', 'TELEFONO', 'DIRECCION', 'NACIONALIDAD', 'OCUPACION']]
-
-
-def is_entity(name):
-    for i in name.split():
-        if i.lower() in CORP_WORD:
-            return True
-        else:
-            next
 
 
 def gen_xml(workbook):
@@ -816,7 +794,7 @@ def gen_xml(workbook):
                             with tag("status_code"):
                                 text("A")
                             with tag("beneficiary"):
-                                text(' '.join(row[11]))
+                                text(''.join(row[11]))
 
                         with tag("to_country"):
                             text("DO")
@@ -849,3 +827,5 @@ def gen_xml(workbook):
 if __name__ == '__main__':
     app = Converter()
     app.run()
+    # print(f"Program execution with timeit module: {timeit.timeit('app', globals=globals())}")
+

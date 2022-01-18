@@ -119,7 +119,7 @@
                         <tph_number>809     9724918</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05000328608</number>
@@ -501,7 +501,7 @@
                         <tph_number>809     5535295</tph_number>
                      </phone>
                   </phones>
-                  <occupation>PROFESOR(A)                                       </occupation>
+                  <occupation>PROFESOR(A)</occupation>
                   <identification>
                      <type>1</type>
                      <number>02900013760</number>
@@ -697,7 +697,7 @@
                         <tph_number>829     3017850</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>00400242723</number>
@@ -790,7 +790,7 @@
                         <tph_number>829     2693454</tph_number>
                      </phone>
                   </phones>
-                  <occupation>PROFESOR(A)                                       </occupation>
+                  <occupation>PROFESOR(A)</occupation>
                   <identification>
                      <type>1</type>
                      <number>06500170045</number>
@@ -918,8 +918,9 @@
             <first_name>JOSE LUIS</first_name>
             <last_name>MARTINEZ</last_name>
             <birthdate>1988-06-17T00:00:00</birthdate>
-            <id_number>DO5166682076</id_number>
+            <id_number>5166682076</id_number>
             <nationality1>DO</nationality1>
+            <nationality2>US</nationality2>
             <residence>DO</residence>
             <phones>
                <phone>
@@ -940,9 +941,9 @@
             </addresses>
             <occupation>AGRICULTURA, GANADERIA, CAZA Y ACTIVIDADES DE SERVICIOS CONEXAS</occupation>
             <identification>
-               <type>1</type>
-               <number>DO5166682076</number>
-               <issue_country>DO</issue_country>
+               <type>C</type>
+               <number>5166682076</number>
+               <issue_country>US</issue_country>
             </identification>
          </from_person>
          <from_country>DO</from_country>
@@ -965,8 +966,9 @@
                   <first_name>JOSE</first_name>
                   <last_name>MARTINEZ</last_name>
                   <birthdate>1982-11-30T00:00:00</birthdate>
-                  <id_number>DO5166682076</id_number>
+                  <id_number>5166682076</id_number>
                   <nationality1>DO</nationality1>
+                  <nationality2>US</nationality2>
                   <residence>DO</residence>
                   <phones>
                      <phone>
@@ -976,11 +978,11 @@
                         <tph_number>646     4317521</tph_number>
                      </phone>
                   </phones>
-                  <occupation>MEDICO                                            </occupation>
+                  <occupation>MEDICO</occupation>
                   <identification>
-                     <type>1</type>
-                     <number>DO5166682076</number>
-                     <issue_country>DO</issue_country>
+                     <type>C</type>
+                     <number>5166682076</number>
+                     <issue_country>US</issue_country>
                   </identification>
                </t_person>
                <role>A</role>
@@ -1069,7 +1071,7 @@
                         <tph_number>857     5443054</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>12100090492</number>
@@ -1162,7 +1164,7 @@
                         <tph_number>829     5801551</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300432927</number>
@@ -1568,7 +1570,7 @@
                         <tph_number>809     8058443</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERIA CIVIL                                  </occupation>
+                  <occupation>INGENIERIA CIVIL</occupation>
                   <identification>
                      <type>1</type>
                      <number>03400128652</number>
@@ -1661,7 +1663,7 @@
                         <tph_number>829     8848656</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300507496</number>
@@ -1754,7 +1756,7 @@
                         <tph_number>829     3934170</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800520625</number>
@@ -1974,7 +1976,7 @@
                         <tph_number>809     5392469</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05300182986</number>
@@ -2067,7 +2069,7 @@
                         <tph_number>809     5583454</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300047303</number>
@@ -2160,7 +2162,7 @@
                         <tph_number>809     5541132</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800348324</number>
@@ -2253,7 +2255,7 @@
                         <tph_number>1914    3438164</tph_number>
                      </phone>
                   </phones>
-                  <occupation>CONTADOR                                          </occupation>
+                  <occupation>CONTADOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>11900029403</number>
@@ -2346,7 +2348,7 @@
                         <tph_number>829     8510334</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05601076978</number>
@@ -3051,7 +3053,7 @@
                         <tph_number>829     3144812</tph_number>
                      </phone>
                   </phones>
-                  <occupation>MILITAR                                           </occupation>
+                  <occupation>MILITAR</occupation>
                   <identification>
                      <type>1</type>
                      <number>40222326379</number>
@@ -3144,7 +3146,7 @@
                         <tph_number>809     3993904</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>04800293146</number>
@@ -3237,7 +3239,7 @@
                         <tph_number>857     5443054</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>12100090492</number>
@@ -3536,7 +3538,7 @@
                         <tph_number>829     8895753</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05601001240</number>
@@ -3629,7 +3631,7 @@
                         <tph_number>829     4049187</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300308309</number>
@@ -4231,7 +4233,7 @@
                         <tph_number>809     5582545</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300028717</number>
@@ -4544,7 +4546,7 @@
                         <tph_number>809     7813356</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05100024859</number>
@@ -4833,7 +4835,7 @@
                         <tph_number>809     8713376</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05601070658</number>
@@ -4926,7 +4928,7 @@
                         <tph_number>809     5852814</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>04900150030</number>
@@ -5518,7 +5520,7 @@
                         <tph_number>809     6092975</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>02900025954</number>
@@ -5611,7 +5613,7 @@
                         <tph_number>809     4575124</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>01700023698</number>
@@ -5797,7 +5799,7 @@
                         <tph_number>829     9323023</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>40224496485</number>
@@ -6013,16 +6015,16 @@
                   </address>
                </addresses>
                <incorporation_country_code>DO</incorporation_country_code>
-               <incorporation_date>2020-08-03T00:00:00</incorporation_date>
+               <incorporation_date>1900-01-02T00:00:00</incorporation_date>
             </t_entity>
             <signatory>
                <is_primary>true</is_primary>
                <t_person>
                   <gender>M</gender>
-                  <first_name>TEMPORALMENTE NO DISPONIBLE</first_name>
-                  <last_name>TEMPORALMENTE NO DISPONIBLE</last_name>
+                  <first_name>FRANCISCO</first_name>
+                  <last_name>GARCIA</last_name>
                   <birthdate>1988-06-17T00:00:00</birthdate>
-                  <id_number>00000000000</id_number>
+                  <id_number>00105866461</id_number>
                   <nationality1>DO</nationality1>
                   <residence>DO</residence>
                   <phones>
@@ -6030,7 +6032,7 @@
                         <tph_contact_type>1</tph_contact_type>
                         <tph_communication_type>M</tph_communication_type>
                         <tph_country_prefix>1</tph_country_prefix>
-                        <tph_number>809      2222222</tph_number>
+                        <tph_number>809      2582085</tph_number>
                      </phone>
                   </phones>
                </t_person>
@@ -6409,7 +6411,7 @@
                         <tph_number>829     3903833</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800877819</number>
@@ -6629,7 +6631,7 @@
                         <tph_number>809     6304379</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>00300215662</number>
@@ -6815,7 +6817,7 @@
                         <tph_number>829     9204308</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05000365972</number>
@@ -6908,7 +6910,7 @@
                         <tph_number>809     5088767</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ABOGADO                                           </occupation>
+                  <occupation>ABOGADO</occupation>
                   <identification>
                      <type>1</type>
                      <number>40221184027</number>
@@ -8351,7 +8353,7 @@
                         <tph_number>849     8860631</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05401094155</number>
@@ -8444,7 +8446,7 @@
                         <tph_number>829     7164877</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05600719487</number>
@@ -8537,7 +8539,7 @@
                         <tph_number>809     3800668</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>40235690845</number>
@@ -8630,7 +8632,7 @@
                         <tph_number>829     3713263</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ENFERMERO (A)                                     </occupation>
+                  <occupation>ENFERMERO (A)</occupation>
                   <identification>
                      <type>1</type>
                      <number>02500144817</number>
@@ -8816,7 +8818,7 @@
                         <tph_number>829     7627670</tph_number>
                      </phone>
                   </phones>
-                  <occupation>MILITAR                                           </occupation>
+                  <occupation>MILITAR</occupation>
                   <identification>
                      <type>1</type>
                      <number>00105781629</number>
@@ -9129,7 +9131,7 @@
                         <tph_number>809     5723826</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>03400064998</number>
@@ -9501,7 +9503,7 @@
                         <tph_number>809     5747326</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AMA DE CASA                                       </occupation>
+                  <occupation>AMA DE CASA</occupation>
                   <identification>
                      <type>1</type>
                      <number>05000322445</number>
@@ -9687,7 +9689,7 @@
                         <tph_number>809     2586012</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>07200129703</number>
@@ -9907,7 +9909,7 @@
                         <tph_number>809     5872588</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>06100117990</number>
@@ -10127,7 +10129,7 @@
                         <tph_number>809     2586012</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>07200129703</number>
@@ -10220,7 +10222,7 @@
                         <tph_number>809     4987075</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800004177</number>
@@ -10313,7 +10315,7 @@
                         <tph_number>809     2611319</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AMA DE CASA                                       </occupation>
+                  <occupation>AMA DE CASA</occupation>
                   <identification>
                      <type>1</type>
                      <number>03700223567</number>
@@ -10406,7 +10408,7 @@
                         <tph_number>829     8197621</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>00300674843</number>
@@ -10592,7 +10594,7 @@
                         <tph_number>809     5857654</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>09200086172</number>
@@ -10685,7 +10687,7 @@
                         <tph_number>809     8375469</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800116427</number>
@@ -10974,7 +10976,7 @@
                         <tph_number>809     5227256</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>00300569175</number>
@@ -11067,7 +11069,7 @@
                         <tph_number>809     2611319</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AMA DE CASA                                       </occupation>
+                  <occupation>AMA DE CASA</occupation>
                   <identification>
                      <type>1</type>
                      <number>03700223567</number>
@@ -11287,7 +11289,7 @@
                         <tph_number>829     9857277</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>04300008499</number>
@@ -11806,7 +11808,7 @@
                         <tph_number>829     2169873</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>12100023782</number>
@@ -11899,7 +11901,7 @@
                         <tph_number>809     4623187</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800142712</number>
@@ -12222,7 +12224,7 @@
                         <tph_number>829     6380404</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRONOMO                                          </occupation>
+                  <occupation>AGRONOMO</occupation>
                   <identification>
                      <type>1</type>
                      <number>04600123709</number>
@@ -12315,7 +12317,7 @@
                         <tph_number>809     7690897</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERO AGRONOMO                                </occupation>
+                  <occupation>INGENIERO AGRONOMO</occupation>
                   <identification>
                      <type>1</type>
                      <number>02700031095</number>
@@ -12916,7 +12918,7 @@
                         <tph_number>809     9803362</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>04200018481</number>
@@ -13195,7 +13197,7 @@
                         <tph_number>809     5798141</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>04400061323</number>
@@ -13381,7 +13383,7 @@
                         <tph_number>829     8723602</tph_number>
                      </phone>
                   </phones>
-                  <occupation>PROFESOR(A)                                       </occupation>
+                  <occupation>PROFESOR(A)</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300231097</number>
@@ -13474,7 +13476,7 @@
                         <tph_number>809     5798141</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>04400061323</number>
@@ -13567,7 +13569,7 @@
                         <tph_number>809     7918000</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05600495963</number>
@@ -13763,7 +13765,7 @@
                         <tph_number>809     3522700</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERIA CIVIL                                  </occupation>
+                  <occupation>INGENIERIA CIVIL</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800076498</number>
@@ -13856,7 +13858,7 @@
                         <tph_number>809     9619559</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800201633</number>
@@ -14238,7 +14240,7 @@
                         <tph_number>829     5895921</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>04400053619</number>
@@ -14747,7 +14749,7 @@
                         <tph_number>829     6784112</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>04400052785</number>
@@ -15070,7 +15072,7 @@
                         <tph_number>829     2955018</tph_number>
                      </phone>
                   </phones>
-                  <occupation>PELUQUERO                                         </occupation>
+                  <occupation>PELUQUERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>08000064504</number>
@@ -15383,7 +15385,7 @@
                         <tph_number>809     4953953</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>03400053728</number>
@@ -15662,7 +15664,7 @@
                         <tph_number>809     3963435</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800202190</number>
@@ -15755,7 +15757,7 @@
                         <tph_number>809     5225808</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>00300798675</number>
@@ -15848,7 +15850,7 @@
                         <tph_number>809     8032110</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05300141370</number>
@@ -15941,7 +15943,7 @@
                         <tph_number>809     4052586</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERIA CIVIL                                  </occupation>
+                  <occupation>INGENIERIA CIVIL</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300335278</number>
@@ -16220,7 +16222,7 @@
                         <tph_number>809     7573184</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERIA CIVIL                                  </occupation>
+                  <occupation>INGENIERIA CIVIL</occupation>
                   <identification>
                      <type>1</type>
                      <number>03103138537</number>
@@ -16313,7 +16315,7 @@
                         <tph_number>809     4052586</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERIA CIVIL                                  </occupation>
+                  <occupation>INGENIERIA CIVIL</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300335278</number>
@@ -16406,7 +16408,7 @@
                         <tph_number>809     5081734</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ADMINISTRADOR DE EMPRESAS                         </occupation>
+                  <occupation>ADMINISTRADOR DE EMPRESAS</occupation>
                   <identification>
                      <type>1</type>
                      <number>02500024761</number>
@@ -16499,7 +16501,7 @@
                         <tph_number>829     4716605</tph_number>
                      </phone>
                   </phones>
-                  <occupation>MEDICO                                            </occupation>
+                  <occupation>MEDICO</occupation>
                   <identification>
                      <type>1</type>
                      <number>06600179250</number>
@@ -16822,7 +16824,7 @@
                         <tph_number>809     8343207</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>02900130150</number>
@@ -17169,7 +17171,7 @@
                         <tph_number>849     2201852</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>00116869629</number>
@@ -17262,7 +17264,7 @@
                         <tph_number>809     5392448</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05300129995</number>
@@ -17355,7 +17357,7 @@
                         <tph_number>849     2201852</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>00116869629</number>
@@ -17448,7 +17450,7 @@
                         <tph_number>849     7855910</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AMA DE CASA                                       </occupation>
+                  <occupation>AMA DE CASA</occupation>
                   <identification>
                      <type>1</type>
                      <number>05700119091</number>
@@ -17820,7 +17822,7 @@
                         <tph_number>829     9314145</tph_number>
                      </phone>
                   </phones>
-                  <occupation>MECANICO                                          </occupation>
+                  <occupation>MECANICO</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800231663</number>
@@ -18006,7 +18008,7 @@
                         <tph_number>829     6604568</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ADMINISTRADOR DE EMPRESAS                         </occupation>
+                  <occupation>ADMINISTRADOR DE EMPRESAS</occupation>
                   <identification>
                      <type>1</type>
                      <number>04701506083</number>
@@ -18226,7 +18228,7 @@
                         <tph_number>829     9819244</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>01700003005</number>
@@ -18319,7 +18321,7 @@
                         <tph_number>809     4849902</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>40220522201</number>
@@ -18642,7 +18644,7 @@
                         <tph_number>829     6863602</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>02900084100</number>
@@ -18862,7 +18864,7 @@
                         <tph_number>809     3531123</tph_number>
                      </phone>
                   </phones>
-                  <occupation>EMPLEADO PRIVADO                                  </occupation>
+                  <occupation>EMPLEADO PRIVADO</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300195425</number>
@@ -19082,7 +19084,7 @@
                         <tph_number>829     2505904</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>10100079606</number>
@@ -19175,7 +19177,7 @@
                         <tph_number>809     8122150</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800109981</number>
@@ -19268,7 +19270,7 @@
                         <tph_number>809     8411452</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05600489693</number>
@@ -19361,7 +19363,7 @@
                         <tph_number>809     6699002</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ADMINISTRADOR DE EMPRESAS                         </occupation>
+                  <occupation>ADMINISTRADOR DE EMPRESAS</occupation>
                   <identification>
                      <type>1</type>
                      <number>06000083789</number>
@@ -19454,7 +19456,7 @@
                         <tph_number>809     8052341</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERO AGRONOMO                                </occupation>
+                  <occupation>INGENIERO AGRONOMO</occupation>
                   <identification>
                      <type>1</type>
                      <number>00200203784</number>
@@ -19650,7 +19652,7 @@
                         <tph_number>849     6213641</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>06700033472</number>
@@ -19743,7 +19745,7 @@
                         <tph_number>829     6760011</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>03103724518</number>
@@ -19836,7 +19838,7 @@
                         <tph_number>809     3963435</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800202190</number>
@@ -19929,7 +19931,7 @@
                         <tph_number>829     6456362</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRIMENSOR                                        </occupation>
+                  <occupation>AGRIMENSOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>11900022150</number>
@@ -20022,7 +20024,7 @@
                         <tph_number>809     5866708</tph_number>
                      </phone>
                   </phones>
-                  <occupation>PASTOR EVANGELICO                                 </occupation>
+                  <occupation>PASTOR EVANGELICO</occupation>
                   <identification>
                      <type>1</type>
                      <number>03900073648</number>
@@ -20115,7 +20117,7 @@
                         <tph_number>809     5846218</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05600788144</number>
@@ -20311,7 +20313,7 @@
                         <tph_number>809     7613925</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>03600386696</number>
@@ -20658,7 +20660,7 @@
                         <tph_number>809     6699002</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ADMINISTRADOR DE EMPRESAS                         </occupation>
+                  <occupation>ADMINISTRADOR DE EMPRESAS</occupation>
                   <identification>
                      <type>1</type>
                      <number>06000083789</number>
@@ -20751,7 +20753,7 @@
                         <tph_number>809     5885616</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05601099616</number>
@@ -21167,7 +21169,7 @@
                         <tph_number>829     6015283</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>01700242660</number>
@@ -21260,7 +21262,7 @@
                         <tph_number>829     6015283</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>01700242660</number>
@@ -21446,7 +21448,7 @@
                         <tph_number>809     2366380</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>00104540588</number>
@@ -21539,7 +21541,7 @@
                         <tph_number>829     8802038</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>03900079843</number>
@@ -21632,7 +21634,7 @@
                         <tph_number>829     7304272</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>40224765160</number>
@@ -21725,7 +21727,7 @@
                         <tph_number>829     7801124</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>12300055600</number>
@@ -21818,7 +21820,7 @@
                         <tph_number>809     2681564</tph_number>
                      </phone>
                   </phones>
-                  <occupation>EMPLEADO PRIVADO                                  </occupation>
+                  <occupation>EMPLEADO PRIVADO</occupation>
                   <identification>
                      <type>1</type>
                      <number>06400106602</number>
@@ -22004,7 +22006,7 @@
                         <tph_number>849     2060616</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05300214540</number>
@@ -22327,7 +22329,7 @@
                         <tph_number>829     7688371</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>06600121096</number>
@@ -22420,7 +22422,7 @@
                         <tph_number>829     4551600</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>01700115643</number>
@@ -22513,7 +22515,7 @@
                         <tph_number>829     8560827</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>04500006012</number>
@@ -22606,7 +22608,7 @@
                         <tph_number>829     6377651</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>04400056539</number>
@@ -22699,7 +22701,7 @@
                         <tph_number>829     2777587</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>06500335291</number>
@@ -22792,7 +22794,7 @@
                         <tph_number>809     7532528</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800202208</number>
@@ -22885,7 +22887,7 @@
                         <tph_number>809     7532528</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>02800202208</number>
@@ -22978,7 +22980,7 @@
                         <tph_number>829     7703119</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05300073128</number>
@@ -23071,7 +23073,7 @@
                         <tph_number>829     5846369</tph_number>
                      </phone>
                   </phones>
-                  <occupation>QUEHACERES DOMESTICOS                             </occupation>
+                  <occupation>QUEHACERES DOMESTICOS</occupation>
                   <identification>
                      <type>1</type>
                      <number>04701516850</number>
@@ -23164,7 +23166,7 @@
                         <tph_number>829     8035812</tph_number>
                      </phone>
                   </phones>
-                  <occupation>OPERADOR BILINGUE                                 </occupation>
+                  <occupation>OPERADOR BILINGUE</occupation>
                   <identification>
                      <type>1</type>
                      <number>06100319265</number>
@@ -23257,7 +23259,7 @@
                         <tph_number>809     9619559</tph_number>
                      </phone>
                   </phones>
-                  <occupation>ESTUDIANTE                                        </occupation>
+                  <occupation>ESTUDIANTE</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800201633</number>
@@ -23546,7 +23548,7 @@
                         <tph_number>809     9623831</tph_number>
                      </phone>
                   </phones>
-                  <occupation>TECNICO                                           </occupation>
+                  <occupation>TECNICO</occupation>
                   <identification>
                      <type>1</type>
                      <number>01200065066</number>
@@ -23639,7 +23641,7 @@
                         <tph_number>809     7104932</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05100058030</number>
@@ -23825,7 +23827,7 @@
                         <tph_number>809     9192020</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>03103450130</number>
@@ -23918,7 +23920,7 @@
                         <tph_number>809     7964687</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>03400293787</number>
@@ -24011,7 +24013,7 @@
                         <tph_number>829     8510334</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05601076978</number>
@@ -24197,7 +24199,7 @@
                         <tph_number>809     4799983</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>00300807088</number>
@@ -24290,7 +24292,7 @@
                         <tph_number>829     7124419</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>00500407424</number>
@@ -24476,7 +24478,7 @@
                         <tph_number>809     4799983</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>00300807088</number>
@@ -24569,7 +24571,7 @@
                         <tph_number>849     6313819</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>02900053642</number>
@@ -24662,7 +24664,7 @@
                         <tph_number>809     5432800</tph_number>
                      </phone>
                   </phones>
-                  <occupation>PENSIONADO                                        </occupation>
+                  <occupation>PENSIONADO</occupation>
                   <identification>
                      <type>1</type>
                      <number>00300460045</number>
@@ -24741,10 +24743,10 @@
                <is_primary>true</is_primary>
                <t_person>
                   <gender>M</gender>
-                  <first_name>EXPORTADORA TAVAREZ ET. S.R.L.</first_name>
-                  <last_name>E.T</last_name>
-                  <birthdate>2011-07-30T00:00:00</birthdate>
-                  <id_number>103031811</id_number>
+                  <first_name>EDUARDO</first_name>
+                  <last_name>TAVAREZ</last_name>
+                  <birthdate>1949-07-15T00:00:00</birthdate>
+                  <id_number>04800369284</id_number>
                   <nationality1>DO</nationality1>
                   <residence>DO</residence>
                   <phones>
@@ -24752,13 +24754,13 @@
                         <tph_contact_type>1</tph_contact_type>
                         <tph_communication_type>M</tph_communication_type>
                         <tph_country_prefix>1</tph_country_prefix>
-                        <tph_number>809     5288878</tph_number>
+                        <tph_number>809     7570471</tph_number>
                      </phone>
                   </phones>
-                  <occupation>n/a</occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
-                     <number>103031811</number>
+                     <number>04800369284</number>
                      <issue_country>DO</issue_country>
                   </identification>
                </t_person>
@@ -24834,10 +24836,10 @@
                <is_primary>true</is_primary>
                <t_person>
                   <gender>M</gender>
-                  <first_name>EXPORTADORA TAVAREZ ET. S.R.L.</first_name>
-                  <last_name>E.T</last_name>
-                  <birthdate>2011-07-30T00:00:00</birthdate>
-                  <id_number>103031811</id_number>
+                  <first_name>EDUARDO</first_name>
+                  <last_name>TAVAREZ</last_name>
+                  <birthdate>1949-07-15T00:00:00</birthdate>
+                  <id_number>04800369284</id_number>
                   <nationality1>DO</nationality1>
                   <residence>DO</residence>
                   <phones>
@@ -24845,13 +24847,13 @@
                         <tph_contact_type>1</tph_contact_type>
                         <tph_communication_type>M</tph_communication_type>
                         <tph_country_prefix>1</tph_country_prefix>
-                        <tph_number>809     5288878</tph_number>
+                        <tph_number>809     7570471</tph_number>
                      </phone>
                   </phones>
-                  <occupation>n/a</occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
-                     <number>103031811</number>
+                     <number>04800369284</number>
                      <issue_country>DO</issue_country>
                   </identification>
                </t_person>
@@ -24941,7 +24943,7 @@
                         <tph_number>829     8902260</tph_number>
                      </phone>
                   </phones>
-                  <occupation>PROFESOR(A)                                       </occupation>
+                  <occupation>PROFESOR(A)</occupation>
                   <identification>
                      <type>1</type>
                      <number>06700148965</number>
@@ -25034,7 +25036,7 @@
                         <tph_number>829     8986633</tph_number>
                      </phone>
                   </phones>
-                  <occupation>QUEHACERES DOMESTICOS                             </occupation>
+                  <occupation>QUEHACERES DOMESTICOS</occupation>
                   <identification>
                      <type>1</type>
                      <number>01300256946</number>
@@ -26154,7 +26156,7 @@
                         <tph_number>809     5459859</tph_number>
                      </phone>
                   </phones>
-                  <occupation>COMERCIANTES                                      </occupation>
+                  <occupation>COMERCIANTES</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800060302</number>
@@ -26340,7 +26342,7 @@
                         <tph_number>809     9777163</tph_number>
                      </phone>
                   </phones>
-                  <occupation>INGENIERO AGRONOMO                                </occupation>
+                  <occupation>INGENIERO AGRONOMO</occupation>
                   <identification>
                      <type>1</type>
                      <number>00101317543</number>
@@ -26722,7 +26724,7 @@
                         <tph_number>809     5179139</tph_number>
                      </phone>
                   </phones>
-                  <occupation>AGRICULTOR                                        </occupation>
+                  <occupation>AGRICULTOR</occupation>
                   <identification>
                      <type>1</type>
                      <number>05800055740</number>
@@ -26815,7 +26817,7 @@
                         <tph_number>829     9868089</tph_number>
                      </phone>
                   </phones>
-                  <occupation>GANADERO                                          </occupation>
+                  <occupation>GANADERO</occupation>
                   <identification>
                      <type>1</type>
                      <number>00800308140</number>

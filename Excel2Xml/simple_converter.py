@@ -12,7 +12,7 @@ from openpyxl import load_workbook
 from yattag import Doc, indent
 from datetime import datetime
 from xml.etree.ElementTree import parse, ParseError
-import time
+from time import time
 import timeit
 import pandas as pd
 
@@ -111,9 +111,10 @@ class Converter:
             sg.popup("Cancelando", "No se seleccionó ningún archivo.")
             raise SystemExit("Cancelado.")
         else:
+            start = time()
             gen_xml(self.wb)
             sg.popup("Archivo XML generado exitosamente.", self.wb)
-
+            print(f'Execution time: {time() - start}')
     # time.sleep(1)
     # stop = time.time()
     # print(f"Program execution with time module: {stop - start}")
@@ -155,7 +156,8 @@ def gen_xml(workbook):
         # ? Se recorre solo la primera fila para crear el esqueleto
         # ? Algunos datos están hardcode ya que el RTE no genera esta data o
         # ? estos datos serán siempre fijos.
-        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=8, min_col=1, max_col=ws.max_column)):
+        for row in ws.iter_rows(min_row=8, max_row=8, min_col=1, max_col=ws.max_column):
+            # generate rows on demand
             row = [cell.value for cell in row if row is not None]
             # ? La indentación define la relación padre-hijo entre los nodos.
             with tag('rentity_id'):
@@ -244,7 +246,7 @@ def gen_xml(workbook):
 
         # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
         # ? y se añade un nodo transacción por fila del RTE(Archivo Excel)
-        for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column)):
+        for row in ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column):
             row = [cell.value for cell in row if row is not None]
             # ? Si tiene número de reporte entonces la fila es válida
             if row[0]:
@@ -288,23 +290,25 @@ def gen_xml(workbook):
                         else:
                             text(row[34])
                     # ? SI EL BENEFICIARIO ES UNA ENTIDAD
+                    con = get_contact(str(row[15]))
+
                     if row[6] == "JURIDICA":
-                        con = get_contact(str(row[15]))
+                        if con is None:
+                            print(f'Relacionado ')
                         with tag("t_from_my_client"):
                             with tag("from_funds_code"):
                                 text("K")
                             if row[48].lower() == 'no':
                                 with tag("t_conductor"):
                                     with tag("gender"):
-                                        if con['SEXO'] is None:
-                                            con['SEXO'] = "M"
-                                            text(con['SEXO'])
+                                        if con is None:
+                                            text(row[82])
                                         else:
                                             text(con['SEXO'])
                                     with tag("title"):
-                                        if con['SEXO'] == "M":
+                                        if con['SEXO'] == "M" or row[82] == "M":
                                             text("Sr")
-                                        elif con['SEXO'] == "F":
+                                        elif con['SEXO'] == "F" or row[82] == "F":
                                             text("Sra")
                                         else:
                                             text("n/a")
@@ -335,6 +339,9 @@ def gen_xml(workbook):
                                             text(''.join(con['IDENTIFICACION'].split('-')).strip())
                                     with tag("nationality1"):
                                         text("DO")
+                                    if row[14].lower() == "pasaporte":
+                                        with tag("nationality2"):
+                                            text("US")
                                     with tag("residence"):
                                         text("DO")
                                     with tag("phones"):
@@ -370,7 +377,10 @@ def gen_xml(workbook):
                                             else:
                                                 text(''.join(con['IDENTIFICACION'].split('-')).strip())
                                         with tag("issue_country"):
-                                            text("DO")
+                                            if row[14].lower() == 'pasaporte':
+                                                text("US")
+                                            else:
+                                                text("DO")
 
                             with tag("from_entity"):
                                 with tag("name"):
@@ -461,9 +471,15 @@ def gen_xml(workbook):
                                 with tag("birthdate"):
                                     text("1988-06-17T00:00:00")
                                 with tag("id_number"):
-                                    text(''.join(row[15].split('-')).strip())
+                                    if row[14].lower() == "pasaporte":
+                                        text(''.join(str(row[15][2:]).split('-')).strip())
+                                    else:
+                                        text(''.join(str(row[15]).split('-')).strip())
                                 with tag("nationality1"):
                                     text("DO")
+                                if row[14].lower() == "pasaporte":
+                                    with tag("nationality2"):
+                                        text("US")
                                 with tag("residence"):
                                     text("DO")
                                 with tag("phones"):
@@ -488,11 +504,11 @@ def gen_xml(workbook):
                                             if row[27] is None and row[28] is None and row[26] is None:
                                                 text("n/a")
                                             elif row[27]:
-                                                text(''.join(row[27].split('-')))
+                                                text(''.join(row[27].split('-')).strip())
                                             elif row[26]:
-                                                text(''.join(row[26].split('-')))
+                                                text(''.join(row[26].split('-')).strip())
                                             elif row[28]:
-                                                text(''.join(row[28].split('-')))
+                                                text(''.join(row[28].split('-')).strip())
                                 with tag("addresses"):
                                     with tag("address"):
                                         with tag("address_type"):
@@ -521,14 +537,22 @@ def gen_xml(workbook):
                                         text(row[17])
                                 with tag("identification"):
                                     with tag("type"):
-                                        text(1)
+                                        if row[14].lower() == "pasaporte":
+                                            text("C")
+                                        else:
+                                            text(1)
                                     with tag("number"):
                                         if row[15] is None or row[15] == '':
                                             text("")
+                                        elif row[14].lower() == "pasaporte":
+                                            text(''.join(str(row[15][2:]).split('-')).strip())
                                         else:
-                                            text(''.join(row[15].split('-')).strip())
+                                            text(''.join(str(row[15]).split('-')).strip())
                                     with tag("issue_country"):
-                                        text("DO")
+                                        if row[14].lower() == 'pasaporte':
+                                            text("US")
+                                        else:
+                                            text("DO")
                             with tag("from_country"):
                                 text("DO")
 
@@ -584,11 +608,11 @@ def gen_xml(workbook):
                                                 if row[27] is None and row[28] is None and row[26] is None:
                                                     text("n/a")
                                                 elif row[27]:
-                                                    text(''.join(row[27].split('-')))
+                                                    text(''.join(row[27].split('-')).strip())
                                                 elif row[26]:
-                                                    text(''.join(row[26].split('-')))
+                                                    text(''.join(row[26].split('-')).strip())
                                                 elif row[28]:
-                                                    text(''.join(row[28].split('-')))
+                                                    text(''.join(row[28].split('-')).strip())
                                     with tag("addresses"):
                                         with tag("address"):
                                             with tag("address_type"):
@@ -657,6 +681,9 @@ def gen_xml(workbook):
                                                 text(''.join(con['IDENTIFICACION'].split('-')).strip())
                                         with tag("nationality1"):
                                             text("DO")
+                                        if row[14].lower() == "pasaporte":
+                                            with tag("nationality2"):
+                                                text("US")
                                         with tag("residence"):
                                             text("DO")
                                         with tag("phones"):
@@ -733,12 +760,16 @@ def gen_xml(workbook):
                                             if row[84] is None or row[84] == '':
                                                 row[84] = "n/a"
                                                 text(row[84])
+                                            elif row[14].lower() == "pasaporte":
+                                                text(''.join(str(row[84][2:]).split('-')).strip())
                                             else:
-                                                text(''.join(row[84].split('-')).strip())
+                                                text(''.join(str(row[84]).split('-')).strip())
 
                                         with tag("nationality1"):
                                             text("DO")
-
+                                        if row[14].lower() == "pasaporte":
+                                            with tag("nationality2"):
+                                                text("US")
                                         with tag("residence"):
                                             text("DO")
 
@@ -766,18 +797,26 @@ def gen_xml(workbook):
                                             if row[88] is None or row[88] == '':
                                                 text("n/a")
                                             else:
-                                                text(row[88])
+                                                text(row[88].strip())
                                         with tag("identification"):
                                             with tag("type"):
-                                                text("1")
+                                                if row[14].lower() == "pasaporte":
+                                                    text("C")
+                                                else:
+                                                    text("1")
                                             with tag("number"):
                                                 if row[84] is None or row[84] == '':
                                                     row[84] = "n/a"
                                                     text(row[84])
+                                                elif row[14].lower() == "pasaporte":
+                                                    text(''.join(str(row[84][2:]).split('-')).strip())
                                                 else:
-                                                    text(''.join(row[84].split('-')).strip())
+                                                    text(''.join(str(row[84]).split('-')).strip())
                                             with tag("issue_country"):
-                                                text("DO")
+                                                if row[14].lower() == 'pasaporte':
+                                                    text("US")
+                                                else:
+                                                    text("DO")
                                 with tag("role"):
                                     text("A")
                             with tag("opened"):  # FIXME: Fecha apertura cta
@@ -798,6 +837,7 @@ def gen_xml(workbook):
 
                         with tag("to_country"):
                             text("DO")
+
 
     # ? doc.getvalue() contiene el archivo XML en formato string
     result = indent(

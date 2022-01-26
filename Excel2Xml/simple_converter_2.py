@@ -4,13 +4,15 @@ Convertidor de archivo Excel generado por el módulo RTE a formato XML
 
 Requerimiento de la Unidad de Análisis Financiera(UAF) para plataforma GoAML.
 """
+import os
 import sys
-from abc import ABCMeta, abstractmethod
+from abc import ABCMeta
 from typing import List
-from multiprocessing import Process, Queue
+import multiprocessing as mp
 
 import pandas as pd
 import PySimpleGUI as sg
+from PySimpleGUI import Print
 from openpyxl import load_workbook
 from yattag import Doc, indent
 from datetime import datetime
@@ -89,13 +91,6 @@ DIRECCIONES = {
     "LA VEGA": "PROFESOR JUAN BOSCH, ESQ. COMANDANTE JIMÉNEZ",
 }
 
-# def get_contact(self, key):
-#     df = pd.read_excel('representantes_de_entidades.xlsx', sheet_name='Entidades')
-#
-#     table = df[
-#         ['RNC', 'CONTACTO', 'APELLIDO', 'IDENTIFICACION', 'SEXO', 'FECHA NACIMIENTO', 'TELEFONO', 'DIRECCION',
-#          'NACIONALIDAD', 'OCUPACION']]
-
 
 class IXMLFormatter(metaclass=ABCMeta):
     "Class interface for (Converter)"
@@ -120,11 +115,6 @@ class IXMLFormatter(metaclass=ABCMeta):
 
     @staticmethod
     @classmethod
-    def __trx_generator(cls):
-        """Interface method that intends to generate Excel row on demand"""
-
-    @staticmethod
-    @classmethod
     def success_msg(cls):
         """Interface method that intends to create a success message window popup"""
 
@@ -133,16 +123,14 @@ class XMLFormatter(IXMLFormatter):
     "Concrete class that implements the XMLFormatter interface"
     def __init__(self):
         self.name = "RTEXML"
-        self.k = List
-        self.ele = List
         self.wb = None
         self.__get_wb()
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return self.name
 
-    def __len__(self):
-        df = pd.load_workbook(self.wb)
+    def __len__(self) -> int:
+        df = pd.read_excel(self.wb, sheet_name='V2.5')
         return len(df.index)
 
     def __get_wb(self) -> None:
@@ -152,32 +140,27 @@ class XMLFormatter(IXMLFormatter):
             sg.popup("Cancelando...", "No se seleccionó ningún archivo")
             raise SystemExit("Proceso cancelado")
 
-    def success_msg(self):
+    def success_msg(self) -> None:
+        """Message successful operation"""
         sg.popup("Archivo XML generado exitosamente.", self.wb)
 
-    def __trx_generator(self, ws):
-        for row in ws.iter_rows(min_row=8,
-                                max_row=ws.max_row,
-                                min_col=1,
-                                max_col=ws.max_column):
-            row = [cell.value for cell in row if row is not None]
-            yield row
-        return
-
-    def get_contact(self, key):
+    def get_contact(self, key: str) -> None:
+        """List of entities which are missing in RTE program from Banke module"""
         df = pd.read_excel('representantes_de_entidades.xlsx', sheet_name='Entidades')
 
         table = df[
             ['RNC', 'CONTACTO', 'APELLIDO', 'IDENTIFICACION', 'SEXO', 'FECHA NACIMIENTO', 'TELEFONO', 'DIRECCION',
              'NACIONALIDAD', 'OCUPACION']]
 
+        # FIXME There is a better way to loop
         for ind, reg in table.iterrows():
             if reg['RNC'].strip() == key.strip():
                 return reg[
                     ['CONTACTO', 'APELLIDO', 'IDENTIFICACION', 'SEXO', 'FECHA NACIMIENTO', 'TELEFONO', 'DIRECCION',
                      'NACIONALIDAD', 'OCUPACION']]
 
-    def save_obj(self, data):
+    def save_obj(self, data: str) -> None:
+        """Save string to a .xml file."""
         # ? Se agrega la fecha del día en que se genera el XML
         date = ''.join(str(datetime.now()).replace('-', '_')[:10])
         filename = "_UAF_Web_Report_" + date + ".xml"
@@ -194,13 +177,13 @@ class XMLFormatter(IXMLFormatter):
         except ParseError as e:
             print('>>Exception<<: File not well-formed')
 
-    def gen_xml(self, workbook):
+    def gen_xml(self) -> None:
         """
         :param workbook: str - Archivo Excel a convertir.
         :return: void
         """
         # Load our Excel File
-        wb = load_workbook(workbook)
+        wb = load_workbook(self.wb)
         # Getting an object of active sheet 1
         ws = wb.worksheets[0]
         # Returning returns a triplet
@@ -220,6 +203,7 @@ class XMLFormatter(IXMLFormatter):
             # ? Se recorre solo la primera fila para crear el esqueleto
             # ? Algunos datos están hardcode ya que el RTE no genera esta data o
             # ? estos datos serán siempre fijos.
+
             for row in ws.iter_rows(min_row=8, max_row=8, min_col=1, max_col=ws.max_column):
                 # generate rows on demand
                 row = [cell.value for cell in row if row is not None]
@@ -310,7 +294,7 @@ class XMLFormatter(IXMLFormatter):
 
             # ? Una vez que el esqueleto XML está hecho se recorren todas las filas
             # ? y se añade un nodo transacción por fila del RTE(Archivo Excel)
-            for idx, row in enumerate(ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column)):
+            for row in ws.iter_rows(min_row=8, max_row=ws.max_row, min_col=1, max_col=ws.max_column):
                 row = [cell.value for cell in row if row is not None]
                 # ? Si tiene número de reporte entonces la fila es válida
                 if row[0]:
@@ -354,7 +338,7 @@ class XMLFormatter(IXMLFormatter):
                             else:
                                 text(row[34])
                         # ? SI EL BENEFICIARIO ES UNA ENTIDAD
-                        con = self.get_contact(str(row[15]))
+                        con = get_contact(str(row[15]))
 
                         if row[6] == "JURIDICA":
                             if con is None:
@@ -907,13 +891,17 @@ class XMLFormatter(IXMLFormatter):
                             with tag("to_country"):
                                 text("DO")
 
+
         # ? doc.getvalue() contiene el archivo XML en formato string
         result = indent(
             doc.getvalue(),
             indentation='   ',
             indent_text=False
         )
-        return result
+
+        # self.xml = result
+        self.save_obj(result)
+        self.success_msg()
 
 
 class ConverterFactory:
@@ -926,13 +914,66 @@ class ConverterFactory:
         return None
 
 
+#? Utility functions
+def get_contact(key: str):
+    """List of entities which are missing in RTE program from Banke module"""
+    df = pd.read_excel('representantes_de_entidades.xlsx', sheet_name='Entidades')
+
+    table = df[
+        ['RNC', 'CONTACTO', 'APELLIDO', 'IDENTIFICACION', 'SEXO', 'FECHA NACIMIENTO', 'TELEFONO', 'DIRECCION',
+         'NACIONALIDAD', 'OCUPACION']]
+
+    for ind, reg in table.iterrows():
+        if reg['RNC'].strip() == key.strip():
+            return reg[
+                ['CONTACTO', 'APELLIDO', 'IDENTIFICACION', 'SEXO', 'FECHA NACIMIENTO', 'TELEFONO', 'DIRECCION',
+                 'NACIONALIDAD', 'OCUPACION']]
+
+def row_generator(obj: XMLFormatter):
+    """
+    Top-level function, enabling object to be pickled by mp.SimpleQueue
+    which is used as default by mp.Pool
+    """
+    obj.gen_xml()
+
+#? --------------------------------------------
+
 #? Client
 if __name__ == '__main__':
     start = time()
-    # path = '../Excel2Xml/_UAF_Web_Report_2021_05_31.xml'
+    # num_processes = os.cpu_count()
     c = ConverterFactory().create_obj('xml')
     print(c.name)
-    xml = c.gen_xml(c.wb)
-    c.save_obj(xml)
-    c.success_msg()
+    print(len(c))
+
+    processes = []
+
+    # ? Se recorre solo la primera fila para crear el esqueleto
+    # ? Algunos datos están hardcode ya que el RTE no genera esta data o
+    # ? estos datos serán siempre fijos.
+
+    #? PROCESSING
+    with mp.Pool(os.cpu_count()) as pool:
+        pool.apply_async(row_generator, args=(c,))
+
+
+    # p1 = Process(target=row_generator, args=(ws, tag, text,))
+    # p2 = Process(target=trx_generator, args=(ws, tag, text,))
+    # p1 = Process(target=pow2, args=(2,))
+    # processes.append(p1)
+    # processes.append(p2)
+    #
+    # for process in processes:
+    #     process.start()
+    #     process.join()
+
+
+    # result = indent(
+    #     doc.getvalue(),
+    #     indentation='   ',
+    #     indent_text=False
+    # )
+    # c.xml = result
+    # c.save_obj(result)
+    # c.success_msg()
     print(f'Execution time: {time() - start}')

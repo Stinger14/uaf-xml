@@ -338,9 +338,10 @@ class XMLFormatter(IXMLFormatter):
                             else:
                                 text(row[34])
                         # ? SI EL BENEFICIARIO ES UNA ENTIDAD
-                        con = get_contact(str(row[15]))
+                        #con = get_contact(str(row[15]))
 
                         if row[6] == "JURIDICA":
+                            con = get_contact(str(row[15]))
                             if con is None:
                                 print(f'Relacionado ')
                             with tag("t_from_my_client"):
@@ -945,6 +946,7 @@ class ConverterFactory:
 def get_contact(key: str):
     """List of entities which are missing in RTE program from Banke module"""
     # Easier to manipulate excel data with pandas
+   
     df = pd.read_excel('representantes_de_entidades.xlsx', sheet_name='Entidades')
 
     table = df[

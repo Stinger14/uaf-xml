@@ -180,7 +180,7 @@ class XMLFormatter(IXMLFormatter):
     def gen_xml(self) -> None:
         """
         :param workbook: str - Archivo Excel a convertir.
-        :return: void
+        :return: None
         """
         # Load our Excel File
         wb = load_workbook(self.wb)
@@ -338,10 +338,10 @@ class XMLFormatter(IXMLFormatter):
                             else:
                                 text(row[34])
                         # ? SI EL BENEFICIARIO ES UNA ENTIDAD
-                        #con = get_contact(str(row[15]))
+                        con = get_contact(str(row[15]))
 
                         if row[6] == "JURIDICA":
-                            con = get_contact(str(row[15]))
+                            # con = get_contact(str(row[15]).strip())
                             if con is None:
                                 print(f'Relacionado ')
                             with tag("t_from_my_client"):
@@ -354,14 +354,21 @@ class XMLFormatter(IXMLFormatter):
                                                 text(row[82])
                                             else:
                                                 text(con['SEXO'])
+
                                         with tag("title"):
-                                            if con['SEXO'] == "M" or row[82] == "M":
-                                                text("Sr")
-                                            elif con['SEXO'] == "F" or row[82] == "F":
-                                                text("Sra")
-                                            else:
-                                                text("n/a")
+                                            try:
+                                                if con['SEXO'] == "M" or row[82] == "M":
+                                                    text("Sr")
+                                                elif con['SEXO'] == "F" or row[82] == "F":
+                                                    text("Sra")
+                                                else:
+                                                    text("n/a")
+                                            except TypeError as e:
+                                                print(e)
+
                                         with tag("first_name"):
+                                            if con is None:
+                                                print('Con is None')
                                             if con['CONTACTO'] is None or con['CONTACTO'] == '':
                                                 con['CONTACTO'] = "n/a"
                                                 text(con['CONTACTO'])
@@ -946,7 +953,7 @@ class ConverterFactory:
 def get_contact(key: str):
     """List of entities which are missing in RTE program from Banke module"""
     # Easier to manipulate excel data with pandas
-   
+
     df = pd.read_excel('representantes_de_entidades.xlsx', sheet_name='Entidades')
 
     table = df[
@@ -959,6 +966,7 @@ def get_contact(key: str):
             return reg[
                 ['CONTACTO', 'APELLIDO', 'IDENTIFICACION', 'SEXO', 'FECHA NACIMIENTO', 'TELEFONO', 'DIRECCION',
                  'NACIONALIDAD', 'OCUPACION']]
+
 
 def row_generator(obj: XMLFormatter):
     """
